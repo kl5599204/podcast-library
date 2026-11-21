@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f0e8">
+<meta name="description" content="Podcast Library — 個人 Podcast 講稿與研究資料庫。第一份專題：苦盡柑來遇見你。">
+<title>Podcast Library — 苦盡柑來遇見你</title>
+<style>
+:root{--paper:#f4f0e8;--paper2:#ebe5d9;--ink:#25251f;--muted:#77766e;--line:#d9d1c4;--orange:#c66c3d;--orange2:#e5a16f;--green:#45584b;--white:#fffdf8;--serif:Georgia,"Noto Serif TC","Songti TC",serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75}a{color:inherit}button,input{font:inherit}.topbar{height:64px;position:sticky;top:0;z-index:20;background:rgba(244,240,232,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,64px)}.brand{font-size:12px;letter-spacing:.19em;font-weight:800;text-transform:uppercase}.brand span{color:var(--orange)}.topmeta{font-size:11px;color:var(--muted);letter-spacing:.12em}.layout{display:grid;grid-template-columns:238px minmax(0,1fr);max-width:1500px;margin:auto}.side{position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;padding:32px 22px 50px 30px;border-right:1px solid var(--line)}.side-label{font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:800;margin:0 0 16px}.nav a{display:block;text-decoration:none;font-size:12px;padding:8px 10px;border-radius:5px;color:#55564e;margin:2px 0}.nav a:hover,.nav a.active{background:#e8dfd1;color:var(--ink)}.nav .sub{padding-left:23px;font-size:11px;color:#88867d}.side-note{margin-top:35px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}main{min-width:0;padding:0 clamp(20px,5vw,76px) 100px}.hero{min-height:560px;padding:70px 0 56px;display:grid;grid-template-columns:1fr .9fr;gap:36px;align-items:center;border-bottom:1px solid var(--line)}.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--orange);font-weight:800}.hero h1{font-family:var(--serif);font-size:clamp(44px,6vw,86px);line-height:1.06;letter-spacing:-.055em;font-weight:500;margin:22px 0 20px}.hero h1 small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.23em;font-weight:700;color:var(--muted);margin-bottom:15px}.hero .dek{max-width:530px;font-family:var(--serif);font-size:18px;line-height:1.85;color:#55564e}.hero-meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}.hero-art{position:relative}.hero-art img{width:100%;height:420px;object-fit:cover;display:block;filter:saturate(.8)}.hero-art:after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--orange2);z-index:-1}.hero-caption{font-size:10px;color:var(--muted);margin-top:22px}.hero-caption a{color:var(--muted)}.searchrow{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.searchrow input{width:min(100%,440px);border:1px solid var(--line);background:var(--white);padding:12px 15px;border-radius:4px;outline:none;font-size:13px}.searchrow input:focus{border-color:var(--orange)}.searchhint{font-size:10px;color:var(--muted)}.section{padding:72px 0 20px;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:70px 1fr;gap:14px;margin-bottom:30px}.num{font-family:var(--serif);font-size:28px;color:var(--orange);line-height:1.2}.section h2{font-family:var(--serif);font-size:clamp(30px,4vw,46px);line-height:1.2;font-weight:500;letter-spacing:-.035em;margin:0}.section-intro{color:var(--muted);font-size:13px;margin:10px 0 0;max-width:720px}.kicker{font-size:10px;letter-spacing:.18em;color:var(--orange);font-weight:800;text-transform:uppercase;margin-bottom:9px}.prose{max-width:850px}.prose p{font-size:14px;line-height:2;margin:0 0 17px}.prose strong{color:#30372e}.leadquote{font-family:var(--serif);font-size:clamp(21px,3vw,30px);line-height:1.65;border-left:3px solid var(--orange);padding:4px 0 4px 23px;margin:30px 0;color:#45463e}.personal{background:var(--green);color:#f5f0e7;padding:30px 34px;margin:30px 0;max-width:900px}.personal .label{font-size:10px;letter-spacing:.2em;color:#dcb38e}.personal p{font-family:var(--serif);font-size:17px;line-height:1.9;margin:14px 0}.personal small{font-size:11px;color:#d7d2c6}.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px 0}.stat{border-top:2px solid var(--orange);padding:12px 10px}.stat b{display:block;font-family:var(--serif);font-size:27px;font-weight:500}.stat span{font-size:10px;color:var(--muted);letter-spacing:.08em}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--white);border:1px solid var(--line);padding:22px 23px;border-radius:3px}.card h3{font-family:var(--serif);font-size:21px;font-weight:500;margin:0 0 8px}.card p{font-size:13px;color:#55564e;line-height:1.9;margin:0}.tag{display:inline-block;background:#eee6d9;color:#76543f;font-size:9px;letter-spacing:.1em;padding:3px 8px;margin-bottom:12px}.character{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}.character:first-child{border-top:0}.character .role{font-size:10px;color:var(--orange);letter-spacing:.12em}.character h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:0}.character p{font-size:13px;margin:4px 0 0;line-height:1.9;color:#55564e}.relation{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:25px 0}.relation div{padding:20px;background:#eae3d7;border-radius:3px}.relation b{font-family:var(--serif);font-size:19px;font-weight:500}.relation p{font-size:12px;line-height:1.8;margin:8px 0 0;color:#55564e}.episode-tools{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 20px}.pill{border:1px solid var(--line);background:transparent;color:#68675f;padding:7px 12px;border-radius:30px;font-size:10px;cursor:pointer}.pill.active,.pill:hover{background:var(--green);border-color:var(--green);color:white}.episodes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.episode{background:var(--white);border:1px solid var(--line);border-radius:3px;overflow:hidden}.episode summary{list-style:none;cursor:pointer;padding:17px 19px;display:grid;grid-template-columns:42px 1fr 20px;gap:12px;align-items:center}.episode summary::-webkit-details-marker{display:none}.episode summary:after{content:"＋";font-size:18px;color:var(--orange);text-align:right}.episode[open] summary:after{content:"−"}.epno{font-family:var(--serif);font-size:24px;color:var(--orange)}.ep-title{font-family:var(--serif);font-size:18px;line-height:1.3}.ep-sub{font-size:9px;color:var(--muted);letter-spacing:.08em;margin-top:4px}.epbody{padding:0 20px 21px 73px}.epbody p{font-size:12px;line-height:1.9;color:#53544d;margin:0 0 12px}.epbody h4{font-size:10px;letter-spacing:.12em;color:var(--orange);margin:14px 0 5px}.epbody ul{padding-left:17px;margin:5px 0 12px}.epbody li{font-size:12px;line-height:1.8;color:#55564e;margin:4px 0}.imagebreak{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;margin:30px 0}.imagebreak img{width:100%;height:270px;object-fit:cover}.imagebreak figcaption{font-size:10px;color:var(--muted);margin-top:7px}.imagebreak h3{font-family:var(--serif);font-size:26px;font-weight:500;margin:0 0 10px}.imagebreak p{font-size:13px;line-height:1.9;color:#55564e}.timeline{position:relative;margin:30px 0 10px;padding-left:26px}.timeline:before{content:"";position:absolute;left:6px;top:7px;bottom:7px;width:1px;background:#c8a17f}.timeitem{position:relative;padding:0 0 25px 18px}.timeitem:before{content:"";position:absolute;left:-24px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--orange);border:2px solid var(--paper)}.timeitem time{font-size:10px;color:var(--orange);letter-spacing:.12em;font-weight:800}.timeitem h3{font-family:var(--serif);font-size:19px;font-weight:500;margin:3px 0}.timeitem p{font-size:12px;line-height:1.9;color:#55564e;margin:0;max-width:800px}.callout{background:#e8e0d3;padding:23px 26px;border-left:3px solid var(--orange);margin:25px 0;max-width:850px}.callout b{display:block;font-size:10px;letter-spacing:.14em;color:#8a5738;margin-bottom:7px}.callout p{font-size:13px;line-height:1.9;margin:0;color:#4d4e47}.compare{width:100%;border-collapse:collapse;margin:25px 0;font-size:12px}.compare th{text-align:left;font-size:10px;letter-spacing:.12em;color:#8a5738;background:#eae3d7}.compare th,.compare td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}.compare td{line-height:1.8}.prompt{border-top:1px solid var(--line);padding:18px 0}.prompt h3{font-family:var(--serif);font-size:20px;font-weight:500;margin:0 0 7px}.prompt p{font-size:12px;color:#5d5e56;margin:0;line-height:1.9}.sources{padding-left:18px}.sources li{font-size:12px;line-height:1.8;margin:10px 0;color:#5b5b54}.sources a{color:#875b3e}.footer{padding:42px 0;color:var(--muted);font-size:10px;display:flex;justify-content:space-between;gap:20px}.hidden{display:none!important}.noresult{display:none;padding:20px;color:var(--muted);font-size:12px}
+@media(max-width:900px){.layout{display:block}.side{position:relative;top:auto;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:12px 18px;overflow-x:auto}.side-label,.side-note{display:none}.nav{display:flex;gap:5px;white-space:nowrap}.nav a{padding:7px 10px}.nav .sub{display:none}main{padding:0 20px 70px}.hero{min-height:0;padding:44px 0 42px;grid-template-columns:1fr;gap:25px}.hero-art img{height:280px}.hero-art:after{inset:9px -9px -9px 9px}.section{padding-top:55px}.episodes{grid-template-columns:1fr}.imagebreak{grid-template-columns:1fr}.imagebreak img{height:230px}.character{grid-template-columns:100px 1fr}.statgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.topmeta{display:none}.hero h1{font-size:49px}.cards,.relation{grid-template-columns:1fr}.section-head{grid-template-columns:45px 1fr}.num{font-size:22px}.personal{padding:23px}.epbody{padding-left:20px}.episode summary{grid-template-columns:34px 1fr 18px}.footer{display:block}.compare{font-size:11px}.compare th,.compare td{padding:9px 7px}}
+@media print{.topbar,.side,.searchrow,.episode-tools{display:none!important}.layout{display:block}main{padding:0 20px}.hero{min-height:0}.episode{break-inside:avoid}.section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">PODCAST <span>LIBRARY</span></div><div class="topmeta">PERSONAL ARCHIVE · VOL. 001 · NOV 2026</div></header>
+<div class="layout">
+<aside class="side"><p class="side-label">IN THIS ISSUE</p><nav class="nav" id="nav">
+<a href="#overview">專題概要</a><a href="#opening">01 個人觀點</a><a href="#story">02 全劇故事</a><a href="#people">03 人物關係</a><a href="#episodes">04 逐集內容</a><a href="#history">05 韓國歷史</a><a href="#jeju">06 濟州文化</a><a href="#themes">07 主題分析</a><a href="#talk">08 Podcast 話題</a><a href="#production">09 製作與演員</a><a href="#sources">10 參考資料</a>
+<div class="side-note">錄音用研究資料庫<br>可搜尋、跳讀、展開逐集內容。<br><br>包含全劇劇透。</div></nav></aside>
+<main>
+<section class="hero" id="overview">
+<div><div class="eyebrow">Podcast archive · No. 001</div><h1><small>WHEN LIFE GIVES YOU TANGERINES</small>苦盡柑來<br>遇見你</h1><p class="dek">一個家庭、兩代女性、六十多年的人生。由濟州島出發，從海女的日常、少女的夢想，到婚姻、階級、教育、失去與告別。</p><div class="hero-meta"><span>Netflix · 2025</span><span>16 Episodes</span><span>4 Chapters / Seasons</span><span>Full Spoilers</span></div></div>
+<div class="hero-art"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jejuolle-route-07(4).jpg?width=1500" alt="濟州島橘園與小路"><div class="hero-caption">濟州島橘園景觀 · Jeju Olle Foundation / Wikimedia Commons · CC BY-SA 4.0</div></div>
+</section>
+<div class="searchrow"><input id="search" type="search" placeholder="搜尋人物、集數、歷史背景、關鍵字……" aria-label="搜尋講稿"><span class="searchhint">搜尋會即時篩選頁面段落及逐集內容</span></div>
+
+<section class="section searchable" id="opening" data-search="個人感想 top1 我的叔叔 努力克服自卑 未知的首爾 擺餐桌 反枱">
+<div class="section-head"><div class="num">01</div><div><div class="kicker">Opening · Personal take</div><h2>開場：點解佢係我人生韓劇 Top 1</h2><p class="section-intro">先講自己點解鍾意，再帶入全劇。呢段可以用作 Podcast 開場，唔需要照稿讀。</p></div></div>
+<div class="personal"><div class="label">YOUR PERSONAL TOP 1</div><p>《苦盡柑來遇見你》係我心目中人生韓劇 Top 1。平時我通常鍾意刺激、懸疑、劇情推進快嘅劇；但如果係生活流，我反而最鍾意呢種貼地、治癒、陪住角色行過人生嘅作品。</p><p>佢寫嘅唔係財閥、英雄或者特別戲劇化嘅人生，而係一個普通人由細到老，經歷家庭、愛情、夢想、自我價值、工作同失去。睇嘅時候唔係淨係追劇情反轉，而係慢慢覺得自己陪咗佢哋生活幾十年。</p><small>個人感受整理自錄音前提供的觀點</small></div>
+<div class="prose">
+<h3 class="kicker">可以講嘅幾個原因</h3>
+<p><strong>1｜普通人嘅完整人生：</strong>故事由愛純少女時代開始，跟住佢結婚、生仔、養家、老去；唔係只揀人生最戲劇化嘅幾個月，而係畀觀眾睇見時間點樣改變一個人。</p>
+<p><strong>2｜唔只係愛情劇：</strong>愛情係重要主線，但作品同時講父母、子女、女性自主、階級、教育、夢想同家庭責任。金明呢一代亦唔係簡單重演父母嘅愛情故事。</p>
+<p><strong>3｜父母視角：</strong>睇到後段會重新理解父母。父母唔係一開始就係父母，佢哋以前都係有夢想、有脾氣、有遺憾嘅年輕人。</p>
+<p><strong>4｜濟州背景：</strong>海女文化、方言、戰後社會、島上生活同首爾城市生活形成對比，令故事唔只係一套普通家庭劇。</p>
+<p><strong>5｜敘事視角轉移：</strong>上半段觀眾自然跟住愛純嘅視角；金明長大、離開濟州之後，敘事重心慢慢轉到金明。呢個係故事視角嘅轉移，唔一定要解讀成觀眾心理投射。</p>
+</div>
+<blockquote class="leadquote">「我唔想你做擺餐桌嘅人，我想你係做反枱嗰個人。」</blockquote>
+<div class="prose"><p>呢句可以帶出全劇一個核心：女性唔應該只係負責維持既有秩序、照顧所有人感受；佢亦應該有權拒絕不公平嘅規則，甚至改變張枱點樣擺、邊個有發言權。</p><p><strong>同《我的大叔》比較：</strong>兩套都係寫普通人、現實壓力同療癒感。《我的大叔》集中喺一段相對短嘅生命時期；《苦盡柑來遇見你》跨越更長人生階段，人物經歷更豐富，亦有兩代家庭關係嘅變化。</p><p><strong>個人榜單：</strong>Top 1《苦盡柑來遇見你》；Top 2《努力克服自卑的我們》；Top 3《未知的首爾》；Top 4《我的大叔》。</p></div>
+</section>
+
+<section class="section searchable" id="story" data-search="全劇概要 劇情 春 夏 秋 冬 故事時間跨度 愛純 寬植 金明">
+<div class="section-head"><div class="num">02</div><div><div class="kicker">The whole story</div><h2>全劇故事與四個篇章</h2><p class="section-intro">故事由戰後濟州出發，跨越約六十多年。以下先交代完整故事脈絡，再進入逐集索引。</p></div></div>
+<div class="statgrid"><div class="stat"><b>16</b><span>集數</span></div><div class="stat"><b>4</b><span>篇章／季節</span></div><div class="stat"><b>約 65 年</b><span>故事跨度</span></div><div class="stat"><b>2 代</b><span>女性人生主線</span></div></div>
+<div class="prose">
+<p>故事由 1950 年代濟州島開始。愛純出身貧困，母親光禮係海女，經歷戰亂與漂泊。愛純聰明、倔強、敢講真話，想讀書、寫詩，渴望離開有限嘅生活環境。但喺當時嘅社會，女性嘅教育、工作同婚姻選擇都受到家庭經濟、性別規範同階級限制。</p>
+<p>寬植由年少開始一直陪喺愛純身邊。佢唔係擅長講甜言蜜語嘅人，而係用行動照顧對方、承擔責任。兩人經歷家庭反對、生活困難、婚姻磨合、養育子女同各種人生打擊，慢慢建立自己嘅家庭。</p>
+<p>女兒金明長大後離開濟州到首爾讀書同工作。佢有較多教育機會，但仍然面對出身、階級、職場同婚姻嘅限制。佢同英凡嘅長期戀愛，令佢見識到門第觀念點樣影響婚姻；後來遇到忠燮（Toto），感情關係開始由條件轉向理解、尊重同陪伴。</p>
+<p>故事最後回到父母晚年。金明逐漸明白父母曾經點樣生活、犧牲同承受失去。愛純亦終於有機會重新拾起寫作夢想。結局唔係話苦難全部值得，亦唔係所有願望都能實現，而係承認一個普通人走過嘅人生值得被記住。</p>
+</div>
+<div class="cards">
+<div class="card"><span class="tag">SPRING · EP01–04</span><h3>春｜少女、母親與初戀</h3><p>愛純嘅童年、光禮嘅海女生活、貧窮同夢想。寬植同愛純嘅感情萌芽，兩人開始反抗家庭同命運安排。春天唔只係戀愛開始，亦係一個人第一次想像自己可以有另一種人生。</p></div>
+<div class="card"><span class="tag">SUMMER · EP05–08</span><h3>夏｜婚姻、家庭與生計</h3><p>兩人建立家庭，面對工作、經濟、風災、村落權力同育兒。金明開始長大，父母要決定點樣支持下一代嘅教育同離家發展。</p></div>
+<div class="card"><span class="tag">AUTUMN · EP09–12</span><h3>秋｜離家、階級與感情選擇</h3><p>金明喺首爾面對職場、愛情同階級差距；愛純同寬植亦要適應城市生活。英凡家庭嘅門第要求令金明重新思考自己想要嘅人生。</p></div>
+<div class="card"><span class="tag">WINTER · EP13–16</span><h3>冬｜失去、成長與告別</h3><p>經濟低潮、家庭危機、重新開始、父母晚年同寬植嘅病。故事逐步由「點樣生活」走向「點樣回望一生」，最後以感謝同告別收束。</p></div>
+</div>
+</section>
+
+<section class="section searchable" id="people" data-search="人物角色 愛純 寬植 光禮 金明 殷明 東明 商吉 英蘭 英凡 忠燮">
+<div class="section-head"><div class="num">03</div><div><div class="kicker">Characters & relationships</div><h2>人物關係與角色分析</h2><p class="section-intro">錄音時可按人物關係跳讀。重點唔係背角色設定，而係睇每個人代表邊種人生選擇。</p></div></div>
+<div class="character"><div><div class="role">THE MOTHER</div><h3>愛純</h3></div><div><p>聰明、倔強、敢講真話，渴望讀書同寫作。佢唔係天生勇敢，而係喺貧窮、家庭責任同性別限制之中，一直唔願完全認命。少女時代嘅夢想未能即時實現，但表達慾、反抗精神同對子女嘅支持一直存在。</p></div></div>
+<div class="character"><div><div class="role">THE FATHER</div><h3>寬植</h3></div><div><p>寡言、務實、忠誠，愛嘅表達多數係行動。佢習慣將責任放喺自己身上，對愛純嘅支持唔係替佢決定，而係盡力令佢有空間做自己。可以討論：佢嘅堅忍係力量，定有時亦係唔懂得求助？</p></div></div>
+<div class="character"><div><div class="role">THE HAENYEO</div><h3>光禮</h3></div><div><p>愛純嘅母親，海女，經歷戰亂與漂泊後喺濟州落腳。佢嘅工作、身體同母女相處方式，構成全劇情感根基之一。劇中較明確嘅背景係戰爭孤兒／流離者，唔應直接講成已確認嘅 4·3 事件受害者。</p></div></div>
+<div class="character"><div><div class="role">THE DAUGHTER</div><h3>金明</h3></div><div><p>愛純與寬植嘅長女，教育程度較高，離開濟州到首爾生活。佢承接父母嘅付出，但同時要為自己嘅工作、感情同婚姻作選擇。佢嘅故事令觀眾睇到下一代有更多機會，但唔代表階級限制已經消失。</p></div></div>
+<div class="character"><div><div class="role">THE SIBLINGS</div><h3>殷明、東明</h3></div><div><p>弟妹代表家庭中唔同性格同命運。三名子女嘅名字「金明、銀明、銅明」帶有父母希望孩子各自發光、出人頭地嘅祝願。東明嘅早逝成為父母長年藏喺心底嘅傷口。</p></div></div>
+<div class="character"><div><div class="role">LOCAL POWER</div><h3>夫商吉</h3></div><div><p>有錢嘅漁船船主、地方有勢力人物，原本同愛純有婚約安排。佢有資源同社會地位，卻將家庭視為自己可以支配嘅地方。前段婚姻有兩名兒子，後來同英蘭有兩名女兒；對家庭有暴力、控制同不忠行為。</p></div></div>
+<div class="character"><div><div class="role">A WOMAN'S EXIT</div><h3>英蘭</h3></div><div><p>後來嫁畀商吉，照顧佢前段婚姻嘅孩子，亦承受丈夫不忠同暴力。佢嘅故事唔係單純苦情配角線，而係逐步建立經濟自主、考取房地產相關資格，最後有能力離開婚姻。可以同愛純比較：兩個女性面對父權制度，但可用資源同出路唔同。</p></div></div>
+<div class="character"><div><div class="role">FIRST LOVE</div><h3>朴英凡</h3></div><div><p>金明嘅初戀／長期交往對象，名校法律背景、前途好。佢哋嘅關係長時間反覆，但母親尹富容重視門第同家庭背景，羞辱金明同佢父母，令婚事破裂。英凡後來同符合家族期待嘅對象結婚。重點唔只係「媽媽反對」，而係兩個人嘅愛情被家庭階級秩序左右。</p></div></div>
+<div class="character"><div><div class="role">ARTIST · TOTO</div><h3>朴忠燮</h3></div><div><p>有藝術夢想、替戲院畫電影海報嘅青年。佢同金明透過戲院、工作同日常互動建立關係。佢嘅條件唔似英凡咁耀眼，但願意理解金明嘅家庭同生活。忠燮去服兵役前留下畫像；退伍後兩人重新相遇，最後成為金明嘅伴侶。</p></div></div>
+<div class="callout"><b>TOTO 名稱由來</b><p>金明帶忠燮母親去睇《新天堂樂園》（Cinema Paradiso），母親覺得電影中嘅 Toto 好似自己個仔，於是叫佢 Toto。呢個稱呼將電影、記憶、母子關係同金明嘅生活連埋一齊。</p></div>
+<div class="relation">
+<div><b>愛純 × 英蘭</b><p>兩人都喺父權同經濟限制下生活。愛純有寬植共同承擔；英蘭要先喺控制之中建立經濟自主，先有離開嘅能力。幸福唔係淨係嫁得好，而係有冇選擇權。</p></div>
+<div><b>寬植 × 商吉</b><p>寬植嘅男性力量來自承擔、尊重同忠誠；商吉嘅力量來自財富、地方勢力同控制。作品比較嘅係兩種「一家之主」模式。</p></div>
+<div><b>英凡 × 忠燮</b><p>英凡有名校、職業同家庭背景，卻受母親門第觀念左右；忠燮條件普通，但願意理解金明。婚姻究竟係兩個人嘅事，定係兩個家庭嘅階級協商？</p></div>
+<div><b>光禮 × 愛純</b><p>母女都堅強，但表達愛嘅方式未必溫柔。光禮嘅人生限制咗佢可以畀女兒嘅選擇；愛純長大後亦將「唔想女兒受同樣苦」轉化成支持。</p></div>
+</div>
+</section>
+
+<section class="section searchable" id="episodes" data-search="逐集 episode ep01 ep02 ep03 ep04 ep05 ep06 ep07 ep08 ep09 ep10 ep11 ep12 ep13 ep14 ep15 ep16 劇情">
+<div class="section-head"><div class="num">04</div><div><div class="kicker">Episode guide · 16 episodes</div><h2>逐集劇情與錄音重點</h2><p class="section-intro">按集數展開，整理主要事件、人物轉變同可以延伸嘅話題。劇情包含全劇劇透；集數簡介同細節以劇集為準。</p></div></div>
+<div class="episode-tools"><button class="pill active" data-filter="all">全部 16 集</button><button class="pill" data-filter="spring">春 EP01–04</button><button class="pill" data-filter="summer">夏 EP05–08</button><button class="pill" data-filter="autumn">秋 EP09–12</button><button class="pill" data-filter="winter">冬 EP13–16</button><button class="pill" id="expandAll">全部展開</button></div>
+<div class="episodes" id="episodeList">
+<details class="episode" data-season="spring"><summary><span class="epno">01</span><span><span class="ep-title">Spring in a Heartbeat</span><span class="ep-sub">호로록 봄 · 春天的開始</span></span></summary><div class="epbody"><p>第一集建立愛純嘅童年、家庭同濟州生活。愛純喺貧困環境下長大，母親光禮靠海女工作維持生計。愛純聰明、反應快、唔甘心認命，心入面裝住好多夢想，但現實不斷提醒佢：讀書、選擇同自由並唔係每個小朋友都可以平等得到。</p><p>光禮唔係一般溫柔母親形象。佢嘅人生經歷戰亂、漂泊同勞動，令佢習慣用實際方式生存。母女之間有愛，但亦有距離，因為上一代未必有能力用下一代想要嘅方式表達。</p><h4>錄音可以講</h4><ul><li>愛純嘅「夢想」唔係奢侈品，而係佢想像另一種人生嘅方式。</li><li>光禮嘅海女工作令女性勞動成為家庭經濟核心，唔係背景裝飾。</li><li>第一集已經建立母女情感重量；廉惠蘭嘅表演可以由眼神、身體疲勞同工作細節入手。</li></ul></div></details>
+<details class="episode" data-season="spring"><summary><span class="epno">02</span><span><span class="ep-title">Sassy First Love</span><span class="ep-sub">요망진 첫사랑 · 倔強初戀</span></span></summary><div class="epbody"><p>愛純同寬植嘅感情逐漸萌芽。寬植由細到大一直留意愛純，佢嘅喜歡唔係靠講好多說話，而係一次次出手幫忙、照顧同守候。愛純亦有自己嘅脾氣同人生想像，佢唔係因為有人愛就自然接受安排。</p><p>兩個年輕人開始試住靠近，但戀愛並唔係單純甜蜜。家庭、社會規範同經濟條件一直喺旁邊，令佢哋嘅選擇唔可以只考慮「鍾唔鍾意」。</p><h4>錄音可以講</h4><ul><li>寬植嘅愛係持續性嘅行動，唔係浪漫台詞。</li><li>愛純需要嘅唔係一個替佢安排人生嘅人，而係尊重佢想法嘅伴侶。</li><li>可以問：一段關係入面，穩定同心動邊樣更重要？</li></ul></div></details>
+<details class="episode" data-season="spring"><summary><span class="epno">03</span><span><span class="ep-title">Yesterday. “Their Spring…”</span><span class="ep-sub">예스터데이. 그들의 봄은…</span></span></summary><div class="epbody"><p>經歷一連串混亂後，愛純同寬植回到濟州。愛純覺得自己似乎冇辦法靠自己選擇命運，開始想將自己交畀一個「現實上較可行」嘅安排。寬植一直將愛純放喺心上，面對佢可能嫁畀別人，內心非常痛苦。</p><p>夫商吉同婚約安排成為重要轉折。商吉有錢、有船、有地方勢力，對當時嘅家庭而言似乎係一條較穩妥嘅出路；但「條件好」同「會尊重你」係兩回事。</p><h4>錄音可以講</h4><ul><li>貧窮會令婚姻變成生存策略，而唔只係愛情選擇。</li><li>商吉同寬植嘅對照開始出現：資源、地位同情感安全未必相等。</li><li>愛純嘅放棄唔代表佢唔想要夢想，而係現實令佢覺得選擇有限。</li></ul></div></details>
+<details class="episode" data-season="spring"><summary><span class="epno">04</span><span><span class="ep-title">The Blazing Summer Sunshine</span><span class="ep-sub">꽈랑꽈랑 여름 · 炙熱夏日</span></span></summary><div class="epbody"><p>愛純同寬植決定一齊生活，戀愛關係開始轉化成婚姻同家庭責任。婚後住入寬植家庭，長輩、家務、經濟同家庭界線都變成新考驗。兩個人相愛，唔代表生活會自動變得容易。</p><p>寬植要喺原生家庭責任同新建立嘅小家庭之間取得平衡；愛純亦要面對自己作為媳婦、妻子同母親嘅位置。呢一集可以睇到浪漫承諾點樣落實成日常勞動。</p><h4>錄音可以講</h4><ul><li>結婚唔係戀愛大結局，而係另一種生活嘅開始。</li><li>夫妻同原生家庭之間嘅界線，係好多世代都會遇到嘅問題。</li><li>寬植支持愛純，唔代表佢可以完全避開傳統家庭制度嘅壓力。</li></ul></div></details>
+<details class="episode" data-season="summer"><summary><span class="epno">05</span><span><span class="ep-title">A Midsummer Night’s Full Nets</span><span class="ep-sub">한여름 밤의 만선 · 盛夏滿載</span></span></summary><div class="epbody"><p>家庭開始面對工作同收入不穩。寬植嘅工作、海上生計同家庭開支互相牽動；愛純亦要諗方法改善生活。原本屬於少女時代嘅夢想，開始同一家人嘅生計連埋一齊。</p><p>「滿載」可以當成一個反差意象：大家想要嘅係收穫、安穩同有餘裕，但生活未必每次都會按努力程度回報。</p><h4>錄音可以講</h4><ul><li>家庭經濟唔係抽象背景，而係會決定人有冇時間、選擇同尊嚴。</li><li>女性嘅勞動好多時同時包含賺錢、家務同照顧責任。</li><li>可以比較今日生活成本同上一代嘅生存壓力，但避免簡單話邊一代更辛苦。</li></ul></div></details>
+<details class="episode" data-season="summer"><summary><span class="epno">06</span><span><span class="ep-title">Life Goes On and On</span><span class="ep-sub">살민 살아진다 · 活着就活下去</span></span></summary><div class="epbody"><p>一家人似乎逐漸建立起生活節奏，但風暴同意外打斷咗呢份安穩。自然災害唔會理會一個家庭啱啱先有幾多積蓄、幾多計劃；普通人往往只能喺損失之後想辦法重建。</p><p>呢一集嘅情緒唔只係災難本身，而係災難之後人點樣繼續生活。愛純同寬植嘅關係亦喺共同承受中變得更具體。</p><h4>錄音可以講</h4><ul><li>「活着就活下去」係一種無奈，但亦係普通人嘅韌性。</li><li>生活唔係努力就一定向上，有時先要處理突然出現嘅損失。</li><li>可以談災後重建、家庭分工同伴侶點樣互相扶持。</li></ul></div></details>
+<details class="episode" data-season="summer"><summary><span class="epno">07</span><span><span class="ep-title">A Fruitful Fall</span><span class="ep-sub">자락자락 가을 · 秋意漸深</span></span></summary><div class="epbody"><p>村長選舉帶出地方權力、利益同腐敗。愛純面對唔公平嘅阻力，故事由家庭內部延伸到村落公共生活。另一方面，金明開始接觸更複雜嘅成人世界，遇到涉及道德判斷同責任嘅請求。</p><p>呢度嘅地方政治唔係大型政治劇，而係睇權力點樣透過人情、資源同地方關係影響普通人。</p><h4>錄音可以講</h4><ul><li>小地方嘅權力網絡可能比想像中更貼身，因為大家互相認識。</li><li>公義唔一定係宏大口號，有時係日常生活中可唔可以公平對待人。</li><li>金明開始要為自己嘅選擇負責，唔再只係父母眼中嘅小朋友。</li></ul></div></details>
+<details class="episode" data-season="summer"><summary><span class="epno">08</span><span><span class="ep-title">The Moon Wanes, Yet the Young Heart Remains</span><span class="ep-sub">변하느니 달이요, 마음이야 늙겠는가</span></span></summary><div class="epbody"><p>金明得到去日本留學嘅機會，家庭要喺夢想、經濟能力同父母擔憂之間作決定。對金明嚟講，離開濟州係向外探索；對父母嚟講，支持女兒遠行亦代表要承受分離同未知。</p><p>父母希望子女有更好人生，但當子女真係要走出自己熟悉嘅生活圈，支持同不捨往往同時存在。</p><h4>錄音可以講</h4><ul><li>父母支持子女追夢，係咪代表要放手？</li><li>教育機會可以改變人生，但家庭有冇資源支持，亦影響機會是否真正平等。</li><li>金明嘅離開，係父母一代努力嘅成果，亦係家庭關係嘅新階段。</li></ul></div></details>
+<details class="episode" data-season="autumn"><summary><span class="epno">09</span><span><span class="ep-title">The Wind Goes Whoosh, My Heart Goes Boo-Hoo</span><span class="ep-sub">바람은 왱왱왱 마음은 잉잉잉</span></span></summary><div class="epbody"><p>故事轉向首爾生活。愛純同寬植喺細小公寓面對城市生活、育兒同經濟壓力，尤其照顧殷明嘅難題令父母疲於奔命。金明則喺首爾處理工作同感情，開始感受到城市生活帶來嘅孤獨同競爭。</p><p>同一座城市入面，父母同女兒處於唔同人生階段：父母為家庭生存，女兒想建立自己嘅未來。城市唔一定代表自由，亦可以係另一種壓迫。</p><h4>錄音可以講</h4><ul><li>濟州同首爾嘅生活差異：空間、工作、節奏同人際網絡。</li><li>育兒困難唔係因為父母唔夠愛，而係照顧責任同現實資源之間有落差。</li><li>可以談移居城市後，個人機會增加，但孤獨感亦增加。</li></ul></div></details>
+<details class="episode" data-season="autumn"><summary><span class="epno">10</span><span><span class="ep-title">The Storm Sweeps My Heart, the Love Rocks My Heart</span><span class="ep-sub">품 안의 바람 품 안의 사랑</span></span></summary><div class="epbody"><p>金明同有藝術氣質、性格古怪嘅同事忠燮逐漸靠近。忠燮替戲院畫電影海報，兩人嘅生活因電影、戲院同工作場景產生連結。另一方面，愛純反覆出現嘅夢境同不安，令家人開始擔心。</p><p>金明嘅感情線開始由條件較好、較符合社會期待嘅英凡，轉向一個更能理解佢生活處境嘅人。呢個轉變唔係即時完成，而係透過日常相處慢慢建立。</p><h4>錄音可以講</h4><ul><li>戲院係公共文化空間，亦係金明同忠燮建立關係嘅地方。</li><li>忠燮嘅藝術夢想同金明嘅人生選擇互相呼應。</li><li>愛純嘅夢境可以帶出母親直覺、焦慮同家庭情感，但唔需要過度神秘化。</li></ul></div></details>
+<details class="episode" data-season="autumn"><summary><span class="epno">11</span><span><span class="ep-title">My Love by My Side</span><span class="ep-sub">내 사랑 내 곁에 · 我的愛在身旁</span></span></summary><div class="epbody"><p>金明同英凡嘅婚約一步步走向結婚，但金明內心愈來愈不安。雙方家庭見面時，英凡母親對金明同佢父母嘅態度，令階級差距變得非常具體：金明嘅父母被要求配合、服務，愛純亦感受到女兒喺對方家庭入面並未被平等看待。</p><p>英凡母親直接以家庭背景同門第作理由，要求金明解除婚約。金明最終選擇離開呢段關係。佢愛英凡，但亦開始承認自己唔可以為咗婚姻而放棄自尊。英凡後來同另一個符合家族期待嘅對象結婚，卻未必得到幸福。</p><p>忠燮亦喺呢段時間準備服兵役，離開前留低一幅金明嘅畫像。兩人曾經透過尷尬、平凡甚至有啲狼狽嘅日常慢慢靠近，呢份感情未必有華麗承諾，但有真實理解。</p><h4>錄音可以講</h4><ul><li>愛純同金明嘅人生唔會完全複製：母親嫁畀初戀，女兒卻要學識離開一段唔尊重自己嘅關係。</li><li>「愛一個人」同「適合一齊生活」係兩個問題。</li><li>英凡母親嘅階級觀念可以理解其社會背景，但理解唔等於認同羞辱。</li><li>金明講出愛自己，係女性自主同自我價值嘅重要時刻。</li></ul></div></details>
+<details class="episode" data-season="autumn"><summary><span class="epno">12</span><span><span class="ep-title">A Glistening Winter</span><span class="ep-sub">펠롱펠롱 겨울 · 閃爍的冬天</span></span></summary><div class="epbody"><p>金明帶住失戀嘅傷口返到濟州，重新同熟悉嘅家庭生活接觸。返到父母身邊，佢似乎可以暫時由城市競爭同婚姻壓力中退一步。愛純亦更加珍惜同家人相處嘅時光，因為時間一路向前，唔會等人準備好先改變。</p><p>金明嘅返家唔係失敗，而係重新整理自己。家庭喺呢度唔係要替佢解決所有問題，而係提供一個可以休息、重新出發嘅地方。</p><h4>錄音可以講</h4><ul><li>失戀之後返屋企，熟悉嘅食物、空間同家人陪伴可以點樣療癒？</li><li>家係咪一定係一個地方，定係一種有人接住你嘅感覺？</li><li>「閃爍」嘅冬天可以理解成寒冷之中仍然有溫暖嘅小時刻。</li></ul></div></details>
+<details class="episode" data-season="winter"><summary><span class="epno">13</span><span><span class="ep-title">Such an Uneven Love</span><span class="ep-sub">그추룩 짝사랑 · 不平均的愛</span></span></summary><div class="epbody"><p>經濟低潮影響金明嘅工作，原本建立嘅職涯方向出現挫折。喺生活似乎冇乜出路嘅時候，佢再次遇到熟悉嘅忠燮，兩人嘅重逢帶來意料之外嘅新開始。愛情唔係喺一切順利時先出現，而係喺人生轉彎位重新遇見一個理解自己嘅人。</p><p>「不平均」亦可以放喺全劇更大嘅情感結構理解：有人付出得多、有人有更多選擇，有人嘅人生機會因為經濟或家庭而被延遲。作品唔係將所有關係寫成公平交換。</p><h4>錄音可以講</h4><ul><li>成年人重逢，唔係回到以前，而係帶住各自經歷重新認識對方。</li><li>金融危機同職場不穩令個人計劃被迫改變。</li><li>金明同忠燮嘅關係，重點係互相看見，而唔係條件比較。</li></ul></div></details>
+<details class="episode" data-season="winter"><summary><span class="epno">14</span><span><span class="ep-title">Spread Your Wings and Fly</span><span class="ep-sub">훨훨 날라, 훨훨 날아 보켜</span></span></summary><div class="epbody"><p>殷明遇上嚴重不幸，家庭要付出巨大代價幫佢渡過難關。寬植同愛純願意犧牲手上所有資源，甚至賣船、變賣家當去救個仔。殷明因此承受沉重嘅自責同自信打擊，因為佢知道父母為自己付出幾多。</p><p>呢一集將父母嘅愛寫成一種實際行動：佢哋唔係講「我哋永遠支持你」就算，而係真係將自己多年累積嘅資源交出去。問題係，父母嘅犧牲會唔會令子女更難放低內疚？</p><h4>錄音可以講</h4><ul><li>父母願意為子女犧牲一切，但子女未必容易接受。</li><li>愛同責任有時會變成沉重負擔，尤其係當子女覺得自己拖累家庭。</li><li>「飛出去」唔係叫人逃避，而係希望跌倒之後仍然有重新開始嘅能力。</li></ul></div></details>
+<details class="episode" data-season="winter"><summary><span class="epno">15</span><span><span class="ep-title">A Spring Every Day</span><span class="ep-sub">만날, 봄 · 每一天的春天</span></span></summary><div class="epbody"><p>家庭成員各自面對新轉變。金明辭去原本工作，開始自己嘅事業，亦搬出來獨立生活；殷明嘅人生仍然有挫折，令愛純擔心。母女之間因為金明一時失言而爆發衝突，佢講出自己唔想生小朋友、唔想令下一代承受無法負擔嘅生活，亦無意中刺痛父母。</p><p>寬植聽到愛純講「幾時先可以唔使再咁辛苦」，決定賣掉菜田，希望一家人可以有新生活。兩人用多年努力累積嘅土地去創業，卻遇上詐騙，生意一度陷入危機。呢度嘅「春」唔係無憂無慮，而係即使已經捱過咁多次，仍然想再試一次。</p><h4>錄音可以講</h4><ul><li>父母以為自己為子女做得夠多，但子女可能仍然有自己對未來嘅恐懼。</li><li>賣地創業係一個好大嘅人生賭注：多年勞動換來嘅資產，可能一夜之間面臨風險。</li><li>家庭成員嘅人生步伐唔一致，唔代表佢哋唔愛對方。</li></ul></div></details>
+<details class="episode" data-season="winter"><summary><span class="epno">16</span><span><span class="ep-title">Here’s to All You’ve Been Through</span><span class="ep-sub">폭싹 속았수다 · 你辛苦了</span></span></summary><div class="epbody"><p>一家人終於逐漸迎來成果，餐廳生意有起色，金明嘅事業亦逐步成功，殷明有自己嘅家庭。可是幸福並唔代表人生從此唔再有痛苦。寬植被診斷患癌，身體逐漸衰弱，家人要面對另一種無法靠努力解決嘅現實。</p><p>金明陪父親看病，兩人有一段長時間嘅相處，講起往事、笑亦流淚。寬植晚年仍然習慣修理屋企、照顧身邊人，直到身體再無法支撐。愛純帶住自己出版嘅詩集去見佢，寬植終於見到愛純實現少女時代嘅寫作夢。佢嘅生命最後仍然圍繞住愛純同家人。</p><p>寬植離世後，愛純繼續生活、教長者寫字、整理詩作。金明亦逐漸明白父親一生默默承擔嘅重量。最後回到年輕時嘅花田，兩個人曾經對未來充滿想像；片名原意似係對一生努力嘅人講一句：「你辛苦了。」</p><h4>錄音可以講</h4><ul><li>寬植離世係全劇最重要嘅告別，但作品唔係只靠死亡製造催淚，而係前面已經累積咗幾十年生活。</li><li>愛純成為出版詩人，唔係突然成功，而係一個被擱置好多年嘅夢終於有出口。</li><li>「我同你一齊嘅人生好唔好？」呢個問題將整部劇嘅愛情、犧牲同回望收埋喺一句說話入面。</li><li>結局唔係話苦難值得，而係話即使有遺憾，呢一生仍然可以被肯定。</li></ul></div></details>
+</div><div class="noresult" id="noEpisode">搵唔到符合條件嘅集數。</div>
+</section>
+
+<section class="section searchable" id="history" data-search="韓國歷史 濟州 4.3 韓戰 工業化 補習禁令 과외 1980 1989 1991 2000 IMF 金融危機 民主化">
+<div class="section-head"><div class="num">05</div><div><div class="kicker">Historical context</div><h2>韓國歷史時間線</h2><p class="section-intro">將劇情放返入當時嘅社會環境。注意：歷史背景唔等於劇中每一幕都有明確年份。</p></div></div>
+<div class="timeline">
+<div class="timeitem"><time>1945–1954</time><h3>解放、分裂與濟州 4·3</h3><p>日本殖民統治結束後，韓國社會政治局勢混亂。濟州 4·3 由 1947 年警察開槍事件等緊張局勢累積，1948 年 4 月 3 日爆發武裝起事與鎮壓，直到 1954 年 9 月 21 日才告一段落。官方估計約三萬人死亡，平民係重大受害者。</p></div>
+<div class="timeitem"><time>1950–1953</time><h3>韓戰與戰後貧困</h3><p>韓戰造成大量人口流離失所、家庭分離、物資短缺同重建壓力。劇中濟州家庭嘅貧困、工作不穩同生計焦慮，可以放喺戰後社會脈絡理解，但唔好將每一個貧窮情節都直接歸因於戰爭。</p></div>
+<div class="timeitem"><time>1960s</time><h3>軍事政權與經濟發展</h3><p>1961 年朴正熙軍事政變後，國家推動出口導向工業化同經濟發展計劃。城市工廠、港口同服務業擴張，人口由農村向城市流動。濟州家庭要思考留島、外出工作、讓子女升學，反映城鄉機會差距。</p></div>
+<div class="timeitem"><time>1970s</time><h3>工業化、家庭角色與女性勞動</h3><p>工業化令家庭收入同消費逐步改變，但性別分工未必同步改變。女性一方面承擔家務育兒，一方面亦要工作賺錢。海女、農業、家庭小生意等女性勞動，提醒觀眾女性並非只係家庭照顧者。</p></div>
+<div class="timeitem"><time>1980–2000</time><h3>補習禁令與教育競爭</h3><p>1980 年 7 月 30 日政府推出教育改革措施，全面禁止私人補習；1981 年相關法例將中小學生補習原則上列為禁止。1989 年起逐步放寬部分大學生非營利補習及學生暑期補習班，1991 年再放寬。2000 年 4 月 27 日憲法法院裁定全面禁止補習違憲。</p></div>
+<div class="timeitem"><time>1987–1988</time><h3>民主化與首爾奧運</h3><p>1987 年民主化運動帶來政治轉型，1988 年首爾奧運成為韓國向世界展示現代化嘅重要象徵。城市生活、流行文化、消費同教育機會變化加快，但不同階層未必同樣受惠。</p></div>
+<div class="timeitem"><time>1997–1998</time><h3>亞洲金融風暴／IMF 危機</h3><p>韓國喺 1997 年金融危機後接受 IMF 援助，企業倒閉、裁員、失業同家庭收入不穩增加。戲院經營、工作機會同年輕人對未來嘅不確定，都可以連結當時經濟氣氛。</p></div>
+<div class="timeitem"><time>2000s</time><h3>家庭觀念與女性選擇變化</h3><p>下一代有更多教育同工作選擇，女性經濟自主程度提高，婚姻逐漸唔再只係家族安排。但照顧父母、孝道同家庭責任仍然存在，新舊價值並存。</p></div>
+</div>
+<div class="callout"><b>重要分辨｜濟州 4·3 唔等於韓戰</b><p>劇集唔係直接描寫 4·3 事件，亦唔應將光禮直接稱為 4·3 受害者。導演曾解釋故事發生喺 4·3 之後，戰爭與動盪令唔同地區嘅流離者進入濟州，影響當地語言同社會面貌。光禮較明確嘅設定係戰爭孤兒／流離者。</p></div>
+<div class="callout"><b>點解金明當時唔可以幫人補習？</b><p>1980 年補習禁令下，私人補習並唔係今日咁普遍合法嘅學生兼職。當時政府希望減少教育競爭同家庭負擔，但禁止並唔代表需求消失，地下補習仍然存在。政策後來逐步放寬，直至 2000 年憲法法院裁定全面禁令違憲。討論角度：禁止補習究竟係咪真係可以消除教育不平等？有資源嘅家庭會唔會反而更容易找到隱密渠道？</p></div>
+</section>
+
+<section class="section searchable" id="jeju" data-search="濟州文化 海女 해녀 숨비소리 tewak mangsari 柑橘 方言 濟州語 韓文標題">
+<div class="section-head"><div class="num">06</div><div><div class="kicker">Jeju culture</div><h2>濟州文化與生活細節</h2><p class="section-intro">呢啲背景資料可以幫觀眾理解點解濟州唔只係一個漂亮嘅拍攝地，而係整個故事嘅文化根源。</p></div></div>
+<figure class="imagebreak"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Jeju-Haenyeo-02.jpg?width=1200" alt="濟州海女"><figcaption></figcaption><div><div class="kicker">HAENYEO · 海女</div><h3>女人同海洋之間嘅生活方式</h3><p>濟州海女自由潛水採集海產，唔使用氧氣樽，靠呼吸控制同對海況嘅熟悉工作。佢哋唔係「完全冇裝備」：會用浮標（tewak）、網袋（mangsari）同採集工具。海女文化需要長期訓練、潮汐知識、海底地形判斷同社群規範。</p><p>潛水後浮出水面會發出特別嘅換氣聲，稱為「숨비소리」（sumbi sori）。海女文化於 2016 年列入 UNESCO 人類非物質文化遺產代表作名錄。</p></figure>
+<figure class="imagebreak"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Haenyeo%20(1958).jpg?width=900" alt="1958年濟州海女歷史照片"><div><div class="kicker">WOMEN & WORK</div><h3>海女唔等於濟州係母系社會</h3><p>海女顯示女性長期係家庭經濟重要支柱，亦有互助、共享海域同規範採集嘅社群制度。但唔好將濟州簡化成「母系社會」：女性勞動地位較突出，唔代表所有權力、土地制度同社會規範都由女性主導。</p><p>職業風險包括反覆閉氣潛水、低溫、海流、長時間勞動同水壓環境。唔好將複雜健康風險簡化成某一種疾病必然由潛水造成。</p></figure>
+<div class="cards">
+<div class="card"><span class="tag">TANGERINES</span><h3>柑橘與土地</h3><p>柑橘種植逐步成為濟州重要農業同經濟象徵。橘園唔只係漂亮背景，亦代表家庭勞動、土地、季節同時間。果實由青變橙，可以同人物由年輕走向成熟互相呼應。</p></div>
+<div class="card"><span class="tag">LANGUAGE</span><h3>濟州方言</h3><p>濟州語同標準韓語有明顯差異，唔係單純口音。方言係身份、地域同世代記憶。不同地方嘅人移居濟州，亦令語言接觸同混合，反映島上人口流動歷史。</p></div>
+<div class="card"><span class="tag">ORIGINAL TITLE</span><h3>폭싹 속았수다</h3><p>韓文原名係濟州方言，大意係「辛苦了／你受了很多苦」。英文名 When Life Gives You Tangerines 係情緒式意譯；中文《苦盡柑來遇見你》將「苦」同柑橘意象連埋一齊。</p></div>
+<div class="card"><span class="tag">COMMUNITY</span><h3>村落共同體</h3><p>島上生活同海洋、天氣、土地同鄰里互相依賴。熟人社會可以帶來互助，但亦可能帶來人情壓力、流言同地方權力關係。劇中村落唔係純粹溫情背景。</p></div>
+</div>
+</section>
+
+<section class="section searchable" id="themes" data-search="主題 女性自主 父母犧牲 階級 教育 夢想 愛情 婚姻 非線性敘事 角色比較">
+<div class="section-head"><div class="num">07</div><div><div class="kicker">Themes & reading notes</div><h2>主題分析與可直接講嘅觀點</h2><p class="section-intro">以下係幾條可以喺討論中反覆回扣嘅主題線，唔一定要一次過全部講晒。</p></div></div>
+<div class="prose">
+<h3 class="kicker">A · 女性自主：擺餐桌定反枱？</h3><p>女性喺傳統家庭入面經常被期待負責照顧、維持和諧同承受委屈。愛純想要嘅唔只係被善待，而係有權決定自己點生活。英蘭嘅故事則提醒觀眾：離開一段控制關係，唔係一句「勇敢啲」就做到，經濟自主、工作技能同安全環境都好重要。</p>
+<h3 class="kicker">B · 父母犧牲：愛係支持，定係壓力？</h3><p>寬植同愛純願意為子女付出一切，但子女未必能夠輕易接受。父母嘅犧牲有愛，亦可能令子女背負內疚。金明理解父母，唔代表佢必須複製父母嘅人生；感恩同活出自己可以同時存在。</p>
+<h3 class="kicker">C · 階級：有錢唔代表有幸福</h3><p>商吉有錢有權，卻用資源控制家庭；寬植冇乜錢，卻尊重愛純、共同承擔。英凡有名校同職業背景，但受家庭門第觀念左右；忠燮條件普通，卻願意理解金明。作品唔係簡單講「窮人好、有錢人壞」，而係問資源點樣被使用、權力點樣分配。</p>
+<h3 class="kicker">D · 夢想可以延遲，但唔一定消失</h3><p>愛純年輕時想成為詩人，生活迫使佢將夢想放低。到晚年，佢終於出版詩集、教長者寫字。呢個結局唔係成功學式嘅「只要努力就一定做到」，而係提醒觀眾：人生有時會延遲、有時會改變形式，但一個人曾經想成為嘅自己未必完全消失。</p>
+<h3 class="kicker">E · 愛情係陪伴，唔係代替對方決定</h3><p>寬植嘅可貴唔係佢完美，而係長年選擇尊重同支持愛純。英凡嘅感情則受到家庭條件同母親控制。金明同忠燮嘅關係更重視對方嘅來處、生活同脆弱。作品提出嘅問題係：愛一個人，係替佢安排一條路，定係令佢有能力行自己嘅路？</p>
+<h3 class="kicker">F · 非線性敘事：記憶點樣連起一生</h3><p>故事喺唔同年代之間跳接，以人物關係、旁白同情緒線索令觀眾跟得上。時間跳躍唔只係交代「之後發生咩事」，亦令觀眾感受到人生唔係直線；一個今日嘅選擇，可能要到幾十年後先明白意義。</p>
+</div>
+<table class="compare"><thead><tr><th>比較角度</th><th>人物 A</th><th>人物 B</th><th>可講觀點</th></tr></thead><tbody>
+<tr><td>男性角色</td><td>寬植：承擔、尊重、忠誠</td><td>商吉：財富、地方勢力、控制</td><td>「一家之主」可以有唔同權力模式。</td></tr>
+<tr><td>女性出路</td><td>愛純：伴侶共同承擔</td><td>英蘭：建立自主後離開婚姻</td><td>選擇權同經濟能力係幸福嘅重要條件。</td></tr>
+<tr><td>婚姻關係</td><td>英凡：門第與家庭期待</td><td>忠燮：理解與日常陪伴</td><td>婚姻係兩個人嘅事，亦可能係兩個家庭嘅階級協商。</td></tr>
+<tr><td>世代視角</td><td>愛純：夢想被生活延遲</td><td>金明：有更多選擇但仍有壓力</td><td>下一代嘅自由係上一代努力嘅成果，但唔代表限制完全消失。</td></tr>
+</tbody></table>
+</section>
+
+<section class="section searchable" id="talk" data-search="Podcast 討論題 問題 回答方向 話題">
+<div class="section-head"><div class="num">08</div><div><div class="kicker">Conversation starters</div><h2>Podcast 討論題與答案方向</h2><p class="section-intro">每題都附多個可能方向，方便三個主持人自由接話，唔需要有唯一正確答案。</p></div></div>
+<div class="prompt"><h3>1｜點解呢套劇會令人咁有共鳴？</h3><p>可能方向：角色唔係完美主角；觀眾見到自己父母或家庭；生活細節比戲劇反轉更真實；時間跨度令情感慢慢累積；濟州背景帶來新鮮感。</p></div>
+<div class="prompt"><h3>2｜寬植係咪完美男主？</h3><p>可能方向：佢可靠、忠誠、願意承擔；但佢亦可能將忍耐同自我犧牲當成責任；可貴之處唔係完美，而係長年選擇尊重愛純。</p></div>
+<div class="prompt"><h3>3｜愛純有冇實現夢想？</h3><p>可能方向：如果只用有冇成為作家衡量，佢嘅夢想被延遲好多年；但表達慾同反抗精神一直存在；夢想可以轉化形式，唔一定只有一種職業結果。</p></div>
+<div class="prompt"><h3>4｜父母犧牲係咪一定值得？</h3><p>可能方向：犧牲有愛，亦可能帶來壓力；子女唔一定要用同樣方式回報；理解父母唔代表要複製父母人生；父母亦需要保留自己嘅人生。</p></div>
+<div class="prompt"><h3>5｜英凡母親係咪純粹反派？</h3><p>可能方向：佢代表階級焦慮、門第觀同家庭控制；可以理解佢嘅社會邏輯，但理解唔等於認同羞辱金明一家；英凡自己有冇能力為關係設立界線？</p></div>
+<div class="prompt"><h3>6｜點解戲院喺金明同忠燮嘅故事入面咁重要？</h3><p>可能方向：戲院係兩人相遇嘅生活空間；電影文化帶來共同記憶；戲院結業可以連結 IMF 經濟轉型、城市娛樂方式改變；Toto 亦將電影同母子關係連埋一齊。</p></div>
+<div class="prompt"><h3>7｜呢部劇會唔會太煽情？</h3><p>可能方向：有啲情節情緒好滿；但情感係由幾十年人物關係累積，唔係突然塞一個悲劇；亦可以討論自己對催淚戲嘅接受程度。</p></div>
+<div class="prompt"><h3>8｜如果要揀一個最難忘角色，會揀邊個？</h3><p>可能方向：光禮代表上一代女性嘅勞動；愛純代表唔肯放棄自我；寬植代表用行動愛人；英蘭代表晚來嘅自主；金明代表理解父母同選擇自己人生。</p></div>
+<div class="prompt"><h3>9｜如果你係金明，會唔會同英凡分手？</h3><p>可能方向：愛情同婚姻係咪可以分開；伴侶有冇能力保護你免受家庭羞辱；家庭背景差距係咪一定要成為障礙；尊嚴同感情點樣取捨。</p></div>
+<div class="prompt"><h3>10｜全劇最想留低嘅一句說話或一幕係咩？</h3><p>可能方向：反枱金句、寬植問兩人一生好唔好、愛純出版詩集、父女相處、花田回憶；亦可以講自己點解被嗰一幕打中。</p></div>
+</section>
+
+<section class="section searchable" id="production" data-search="製作 演員 IU 文素利 朴寶劍 朴海俊 廉惠蘭 林尚春 金元錫 Netflix">
+<div class="section-head"><div class="num">09</div><div><div class="kicker">Production notes</div><h2>作品資料、演員與製作討論</h2></div></div>
+<div class="cards">
+<div class="card"><span class="tag">FORMAT</span><h3>Netflix 16 集限定劇</h3><p>2025 年 3 月上線，四個篇章、每篇四集分批推出。16 集篇幅可以容納人物唔同人生階段，但亦要求觀眾接受較慢嘅生活節奏。</p></div>
+<div class="card"><span class="tag">CREATOR</span><h3>編劇林尚春 · 導演金元錫</h3><p>作品將幽默、辛酸同溫柔放喺同一個生活場景。濟州方言、年代美術、服裝同場景設計，都係建立可信年代感嘅重要部分。</p></div>
+<div class="card"><span class="tag">DUAL ROLE</span><h3>IU：年輕愛純／金明</h3><p>IU 同時飾演年輕愛純同女兒金明。兩人唔係同一性格：愛純更直接、倔強；金明受教育同城市經驗影響較深，但兩人都承接上一代女性想要更多選擇嘅渴望。</p></div>
+<div class="card"><span class="tag">AGE TRANSITION</span><h3>文素利 · 朴海俊</h3><p>文素利飾演年長愛純，朴海俊飾演年長寬植。年輕與年長演員需要對齊說話節奏、眼神、習慣動作同身體姿態，令同一個角色跨越年齡仍然連貫。</p></div>
+<div class="card"><span class="tag">SUPPORTING</span><h3>廉惠蘭：光禮</h3><p>光禮喺第一集已建立強烈存在感。佢嘅工作、身體狀態同對女兒嘅方式，令觀眾感受到一個經歷過艱難年代嘅母親。可以由第一集開始講表演細節。</p></div>
+<div class="card"><span class="tag">AWARDS</span><h3>評價與獎項</h3><p>本劇於 2025 年百想藝術大賞獲多項提名。錄音若要報出得獎名單、收視或排行榜數字，應再核對官方資料，避免將提名講成得獎。</p></div>
+</div>
+</section>
+
+<section class="section searchable" id="sources" data-search="資料來源 參考資料 Netflix UNESCO 韓國國家記錄院 憲法法院 濟州 4.3">
+<div class="section-head"><div class="num">10</div><div><div class="kicker">Sources & fact check</div><h2>資料來源與核對提醒</h2><p class="section-intro">歷史、文化同集數資料以官方或可追溯來源優先。角色劇情以劇集本身為最終依據。</p></div></div>
+<ul class="sources">
+<li><a href="https://www.netflix.com/title/81681535" target="_blank" rel="noreferrer">Netflix 官方劇集頁</a> — 劇集基本資料、演員及官方集數簡介。</li>
+<li><a href="https://www.writers.kr/drama/219246/episodes" target="_blank" rel="noreferrer">Writers Room：16 集資料與集數標題</a> — 集數名稱、播出日及片長參考。</li>
+<li><a href="https://www.rottentomatoes.com/tv/when_life_gives_you_tangerines/s01" target="_blank" rel="noreferrer">Rotten Tomatoes：Episode Guide</a> — EP11–16 官方簡介彙整。</li>
+<li><a href="https://theme.archives.go.kr/next/koreaOfRecord/privateLesson.do" target="_blank" rel="noreferrer">韓國國家記錄院：補習禁令</a> — 1980 年全面禁止、1989／1991 逐步放寬及後續政策。</li>
+<li><a href="https://www.law.go.kr/detcInfoP.do?detcSeq=48720" target="_blank" rel="noreferrer">韓國國家法律資訊中心／憲法法院判例</a> — 補習管制歷史與 2000 年違憲判決。</li>
+<li><a href="https://english.ccourt.go.kr/site/eng/ex/bbs/View.do?bcIdx=984827&cbIdx=1142" target="_blank" rel="noreferrer">韓國憲法法院英文摘要</a> — 2000 年 4 月 27 日私人補習禁令違憲判決。</li>
+<li><a href="https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-women-divers-diving-for-a-living-01068" target="_blank" rel="noreferrer">UNESCO：Culture of Jeju Haenyeo</a> — 海女文化、自由潛水、社群知識與傳承。</li>
+<li><a href="https://www.history.go.kr" target="_blank" rel="noreferrer">韓國國立歷史研究院</a> — 海女及濟州歷史背景資料。</li>
+<li><a href="https://www.jeju.go.kr/jejupeace/jeju43/overview.htm" target="_blank" rel="noreferrer">濟州 4·3 官方資料</a> — 4·3 歷史背景、時間範圍與受害者資料。</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Jejuolle-route-07(4).jpg" target="_blank" rel="noreferrer">濟州橘園圖片</a> — Jeju Olle Foundation，CC BY-SA 4.0。</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Korea-Jeju-Haenyeo-02.jpg" target="_blank" rel="noreferrer">海女圖片</a> — karendotcom127，CC BY 2.0。</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Haenyeo_(1958).jpg" target="_blank" rel="noreferrer">1958 年海女歷史照片</a> — 韓國政策放送院（KTV），KOGL Type 1。</li>
+</ul>
+<div class="callout"><b>錄音前核對提醒</b><p>年代背景同劇情場景唔一定一一對應。若要引用某一幕嘅精確對白、年份、人物關係或情節次序，請以 Netflix 劇集畫面／字幕核對。呢份網站係錄音研究參考，不係逐字稿。</p></div>
+</section>
+<footer class="footer"><span>PODCAST LIBRARY · VOL. 001</span><span>Made for listening, looking up & remembering.</span></footer>
+</main>
+</div>
+<script>
+const search=document.getElementById('search');
+const searchable=[...document.querySelectorAll('.searchable')];
+const episodes=[...document.querySelectorAll('.episode')];
+const noEpisode=document.getElementById('noEpisode');
+function filterPage(){
+ const q=search.value.trim().toLowerCase();let visibleEpisodes=0;
+ searchable.forEach(section=>{
+  const text=(section.innerText+' '+(section.dataset.search||'')).toLowerCase();
+  const match=!q||text.includes(q);
+  section.classList.toggle('hidden',!match);
+  if(section.id==='episodes'){
+   episodes.forEach(ep=>{const show=!q||(ep.innerText+' '+(ep.dataset.season||'')).toLowerCase().includes(q);ep.classList.toggle('hidden',!show);if(show)visibleEpisodes++});
+   noEpisode.style.display=visibleEpisodes?'none':'block';
+  }
+ });
+}
+search.addEventListener('input',filterPage);
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const val=btn.dataset.filter;let n=0;
+ episodes.forEach(ep=>{const show=val==='all'||ep.dataset.season===val;ep.classList.toggle('hidden',!show);if(show)n++});
+ noEpisode.style.display=n?'none':'block';search.value='';
+ searchable.forEach(s=>s.classList.remove('hidden'));
+}));
+document.getElementById('expandAll').addEventListener('click',()=>episodes.forEach(ep=>{if(!ep.classList.contains('hidden'))ep.open=!ep.open}));
+const links=[...document.querySelectorAll('.nav a')];
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}}),{rootMargin:'-20% 0px -70% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
