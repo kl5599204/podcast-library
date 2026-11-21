@@ -12,13 +12,13 @@
 @media(max-width:900px){.layout{display:block}.side{position:relative;top:auto;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:12px 18px;overflow-x:auto}.side-label,.side-note{display:none}.nav{display:flex;gap:5px;white-space:nowrap}.nav a{padding:7px 10px}.nav .sub{display:none}main{padding:0 20px 70px}.hero{min-height:0;padding:44px 0 42px;grid-template-columns:1fr;gap:25px}.hero-art img{height:280px}.hero-art:after{inset:9px -9px -9px 9px}.section{padding-top:55px}.episodes{grid-template-columns:1fr}.imagebreak{grid-template-columns:1fr}.imagebreak img{height:230px}.character{grid-template-columns:100px 1fr}.statgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.topmeta{display:none}.hero h1{font-size:49px}.cards,.relation{grid-template-columns:1fr}.section-head{grid-template-columns:45px 1fr}.num{font-size:22px}.personal{padding:23px}.epbody{padding-left:20px}.episode summary{grid-template-columns:34px 1fr 18px}.footer{display:block}.compare{font-size:11px}.compare th,.compare td{padding:9px 7px}}
 @media print{.topbar,.side,.searchrow,.episode-tools{display:none!important}.layout{display:block}main{padding:0 20px}.hero{min-height:0}.episode{break-inside:avoid}.section{break-inside:avoid}}
-</style>
+.poster-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:26px 0}.poster-card{background:var(--white);border:1px solid var(--line);overflow:hidden}.poster-art{min-height:190px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;isolation:isolate}.poster-art:after{content:"";position:absolute;inset:0;background:linear-gradient(155deg,rgba(20,35,29,.05),rgba(20,35,29,.7));z-index:-1}.poster-art.spring{background:linear-gradient(135deg,#d2a75e,#607c50 55%,#244d40)}.poster-art.summer{background:linear-gradient(135deg,#4f8790,#d6b45e 55%,#294d5d)}.poster-art.autumn{background:linear-gradient(135deg,#a96c48,#d4a16e 50%,#47594b)}.poster-art.winter{background:linear-gradient(135deg,#657c92,#b4a7a0 55%,#39495d)}.poster-art b{font-family:var(--serif);font-size:24px;font-weight:500;line-height:1.15}.poster-art span{font-size:9px;letter-spacing:.16em}.poster-copy{padding:15px}.poster-copy h3{font-family:var(--serif);font-size:18px;font-weight:500;margin:0 0 5px}.poster-copy p{font-size:11px;line-height:1.8;color:#5b5b54;margin:0}.yearline{display:grid;grid-template-columns:105px 1fr;gap:14px;padding:15px 0;border-top:1px solid var(--line)}.yearline time{font-size:12px;font-weight:800;color:var(--orange);letter-spacing:.06em}.yearline p{font-size:12px;line-height:1.9;margin:0;color:#55564e}.note-small{font-size:10px;color:var(--muted);line-height:1.8}.detail-block{margin:25px 0;padding:24px 26px;background:var(--white);border:1px solid var(--line)}.detail-block h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:0 0 10px}.detail-block p{font-size:13px;line-height:1.95;color:#55564e;margin:9px 0}.detail-block ul{padding-left:19px}.detail-block li{font-size:12px;line-height:1.9;color:#55564e;margin:5px 0}@media(max-width:900px){.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr)}}@media(max-width:520px){.poster-grid{grid-template-columns:1fr 1fr}.poster-art{min-height:150px;padding:12px}.poster-art b{font-size:19px}.yearline{grid-template-columns:78px 1fr;gap:9px}.detail-block{padding:19px}}</style>
 </head>
 <body>
 <header class="topbar"><div class="brand">PODCAST <span>LIBRARY</span></div><div class="topmeta">PERSONAL ARCHIVE · VOL. 001 · NOV 2026</div></header>
 <div class="layout">
 <aside class="side"><p class="side-label">IN THIS ISSUE</p><nav class="nav" id="nav">
-<a href="#overview">專題概要</a><a href="#opening">01 個人觀點</a><a href="#story">02 全劇故事</a><a href="#people">03 人物關係</a><a href="#episodes">04 逐集內容</a><a href="#history">05 韓國歷史</a><a href="#jeju">06 濟州文化</a><a href="#themes">07 主題分析</a><a href="#talk">08 Podcast 話題</a><a href="#production">09 製作與演員</a><a href="#sources">10 參考資料</a>
+<a href="#overview">專題概要</a><a href="#opening">01 個人觀點</a><a href="#story">02 全劇故事</a><a href="#timeline">時間與年齡</a><a href="#people">03 人物關係</a><a href="#episodes">04 逐集內容</a><a href="#history">05 韓國歷史</a><a href="#jeju">06 濟州文化</a><a href="#themes">07 主題分析</a><a href="#talk">08 Podcast 話題</a><a href="#production">09 製作與演員</a><a href="#sources">10 參考資料</a>
 <div class="side-note">錄音用研究資料庫<br>可搜尋、跳讀、展開逐集內容。<br><br>包含全劇劇透。</div></nav></aside>
 <main>
 <section class="hero" id="overview">
@@ -57,13 +57,46 @@
 <div class="card"><span class="tag">AUTUMN · EP09–12</span><h3>秋｜離家、階級與感情選擇</h3><p>金明喺首爾面對職場、愛情同階級差距；愛純同寬植亦要適應城市生活。英凡家庭嘅門第要求令金明重新思考自己想要嘅人生。</p></div>
 <div class="card"><span class="tag">WINTER · EP13–16</span><h3>冬｜失去、成長與告別</h3><p>經濟低潮、家庭危機、重新開始、父母晚年同寬植嘅病。故事逐步由「點樣生活」走向「點樣回望一生」，最後以感謝同告別收束。</p></div>
 </div>
+<div class="detail-block">
+<h3>金明考入首爾大學：唔只係考入一間大學</h3>
+<p>金明考入首爾大學（Seoul National University, SNU），對佢同屋企人嚟講係一個非常重要嘅人生轉折。佢唔單止係離開濟州、進入首爾生活，更代表一個來自普通家庭嘅孩子，透過教育跨越地域同階級限制。父母為佢升學付出嘅金錢、勞動同犧牲，令呢張入學通知書唔只屬於金明一個人。</p>
+<p>韓國常講嘅「SKY」係三間最具代表性、競爭激烈嘅大學縮寫：S = 首爾大學（Seoul National University），K = 高麗大學（Korea University），Y = 延世大學（Yonsei University）。呢個唔係官方聯盟，而係社會上對頂尖大學嘅慣常稱呼。入讀 SKY 往往同就業機會、社會地位及人脈想像連繫，所以金明考入首爾大學，亦解釋到點解英凡會用學歷、家庭背景去衡量佢。</p>
+<p>值得講嘅係：劇集冇將「入名校」寫成即刻翻身。金明仍然要面對生活費、住屋、兼職、階級差距同情感壓力。名校係一張入場券，唔係保證幸福嘅通行證。</p>
+<p class="note-small">SKY 為社會通稱，並非正式排名制度；三校各自獨立招生。參考：STINT 韓國高等教育報告、Korea JoongAng Daily。</p>
+</div>
+</section>
+
+<section class="section searchable" id="timeline" data-search="年份 年齡 時間線 金明 首爾大學 英凡 七年 忠燮 1990 1997 1998 2001">
+<div class="section-head"><div class="num">02A</div><div><div class="kicker">Timeline · Years & ages</div><h2>年份、人物年齡與劇情跳接</h2><p class="section-intro">呢部劇刻意用回憶、旁白同跨年代剪接去呈現人生。以下將劇中可辨認嘅年代、角色年齡線索同合理推算分開，方便錄音時交代時間。</p></div></div>
+<div class="callout"><b>先講清楚｜唔係每一幕都有字幕年份</b><p>劇中有啲年代可以由奧運、新聞、金融危機、戲院告示或角色對白確認；有啲只可以推算。下表以劇情線索作參考，人物年齡用「約」表示，唔應當成官方角色履歷。</p></div>
+<div class="yearline"><time>1950年代</time><p><strong>愛純、寬植童年及少年時期。</strong>故事由戰後濟州嘅貧困生活展開。愛純同寬植年紀相近，兩人嘅成長環境、家庭條件同對未來嘅想像逐步建立。</p></div>
+<div class="yearline"><time>1960年代</time><p><strong>愛純、寬植成家立室。</strong>年輕夫妻由戀愛走入婚姻及家庭生活。愛純嘅寫作夢想逐漸被家務、生計同育兒擠壓，但並冇完全消失。</p></div>
+<div class="yearline"><time>1968</time><p><strong>金明出生（角色資料常見年份）。</strong>若按呢個年份計，金明喺 1980 年代中後期升讀大學時大約 18–20 歲；呢個年齡係按年份推算，並非每一集都明確標示。</p></div>
+<div class="yearline"><time>1980年代中後期</time><p><strong>金明考入首爾大學。</strong>佢由濟州去首爾，開始大學生活，亦遇上英凡。入讀名校令佢得到新機會，但同時進入一個更重視學歷、家庭背景同消費能力嘅社會環境。</p></div>
+<div class="yearline"><time>1988</time><p><strong>首爾奧運及首爾生活線。</strong>EP09 有電視新聞提及奧運同政府「掃蕩犯罪」嘅社會氣氛。呢個年代背景亦帶出華城連環殺人案新聞（下方另有說明）。</p></div>
+<div class="yearline"><time>約1980年代末–1990年代</time><p><strong>金明與英凡由校園戀愛走向婚約。</strong>兩人交往多年，劇中提到七年戀愛後準備結婚。呢段關係唔係一開始就跳到婚禮，而係以求學、工作、家庭見面同婚約準備逐步推進；但剪接壓縮咗日常相處，所以觀眾會感覺時間突然過咗好多年。</p></div>
+<div class="yearline"><time>1990年10月</time><p><strong>金明與忠燮初次相遇。</strong>金明搬入首爾寄宿屋，忠燮因躲避房東女兒而意外走入佢房間。之後佢幫金明喺戲院搵兼職，兩人由尷尬、互相幫忙同生活小事慢慢建立信任。</p></div>
+<div class="yearline"><time>1997</time><p><strong>亞洲金融危機／IMF 時期。</strong>金明工作受經濟環境影響，人生計劃再次被打亂；戲院經營亦面對結業壓力。呢個轉折令佢同忠燮有機會重新相遇。</p></div>
+<div class="yearline"><time>約1998</time><p><strong>金明與忠燮結婚（按劇情時間線推算）。</strong>忠燮唔係一個突然出現、立即取代英凡嘅新男友；兩人早已在生活中認識，之後因時間、距離同各自人生經歷而重新靠近。婚姻亦建立喺金明已經重新選擇自己人生之後。</p></div>
+<div class="yearline"><time>2001</time><p><strong>金明女兒出生（角色資料常見年份）。</strong>金明逐步建立家庭同事業，後來以教育平台回應自己母親當年無法接受教育嘅遺憾。</p></div>
+<div class="detail-block">
+<h3>點解觀眾會覺得「突然跳咗幾年」？</h3>
+<p>原因係作品唔採用每一年順序交代嘅傳統編年敘事，而係由年長金明嘅回望做框架，將某個年代最能代表人物關係嘅場景剪埋一齊。部分轉場用新聞、服裝、髮型、工作環境同季節作時間提示，未必每次都直接打出年份。</p>
+<ul><li><strong>金明由濟州學生變成首爾大學生：</strong>係成長階段轉換，作品將入學結果同家庭反應放喺焦點，略過咗部分備考日常。</li><li><strong>英凡七年戀愛到婚約：</strong>七年本身係一段長關係，但劇集用幾個關鍵節點濃縮，令觀眾未必感受到七年點樣累積成婚姻壓力。</li><li><strong>忠燮由戲院同事變成重要伴侶：</strong>佢唔係靠一場浪漫告白贏得金明，而係透過幫佢搵工作、尊重佢生活方式、理解佢家庭背景、在危急時刻照顧佢，逐步建立安全感。</li></ul>
+<p>Podcast 可以講：呢種剪接係優點定缺點？優點係人生感更強，唔會將幾十年拍成流水帳；缺點係部分關係轉變缺少中間過程，觀眾要自己由細節拼返時間。</p>
+</div>
 </section>
 
 <section class="section searchable" id="people" data-search="人物角色 愛純 寬植 光禮 金明 殷明 東明 商吉 英蘭 英凡 忠燮">
 <div class="section-head"><div class="num">03</div><div><div class="kicker">Characters & relationships</div><h2>人物關係與角色分析</h2><p class="section-intro">錄音時可按人物關係跳讀。重點唔係背角色設定，而係睇每個人代表邊種人生選擇。</p></div></div>
 <div class="character"><div><div class="role">THE MOTHER</div><h3>愛純</h3></div><div><p>聰明、倔強、敢講真話，渴望讀書同寫作。佢唔係天生勇敢，而係喺貧窮、家庭責任同性別限制之中，一直唔願完全認命。少女時代嘅夢想未能即時實現，但表達慾、反抗精神同對子女嘅支持一直存在。</p></div></div>
 <div class="character"><div><div class="role">THE FATHER</div><h3>寬植</h3></div><div><p>寡言、務實、忠誠，愛嘅表達多數係行動。佢習慣將責任放喺自己身上，對愛純嘅支持唔係替佢決定，而係盡力令佢有空間做自己。可以討論：佢嘅堅忍係力量，定有時亦係唔懂得求助？</p></div></div>
-<div class="character"><div><div class="role">THE HAENYEO</div><h3>光禮</h3></div><div><p>愛純嘅母親，海女，經歷戰亂與漂泊後喺濟州落腳。佢嘅工作、身體同母女相處方式，構成全劇情感根基之一。劇中較明確嘅背景係戰爭孤兒／流離者，唔應直接講成已確認嘅 4·3 事件受害者。</p></div></div>
+<div class="detail-block">
+<h3>忠燮點樣理解同尊重金明？</h3>
+<p>忠燮嘅吸引力唔係因為佢有錢、有名校背景，或者識講完美情話，而係佢唔會將金明當成需要被拯救、被安排嘅人。佢哋初遇時，忠燮係一個替戲院畫海報、生活唔算穩定嘅藝術工作者；金明亦係一個要計住租金、兼職同生活費嘅大學生。兩人最初嘅連結來自具體小事：佢幫金明喺戲院搵工作，金明亦願意理解佢對畫畫嘅堅持。</p>
+<p>更重要係忠燮會留意金明真正嘅處境，而唔係只用自己嘅標準評價佢。例如佢唔會因為金明出身普通就覺得佢需要隱藏家庭；佢願意陪伴、幫忙，但唔會要求金明放棄自己嘅方向去配合佢。喺金明經歷英凡家庭羞辱之後，忠燮代表一種唔需要靠階級認可先成立嘅親密關係。</p>
+<p>佢嘅尊重亦唔等於完全冇缺點：忠燮有藝術家式嘅固執、工作不穩定同表達感情較含蓄嘅一面。劇集將佢寫成一個真實、有稜角但願意理解對方嘅人，而唔係完美白馬王子。</p>
+</div><div class="character"><div><div class="role">THE HAENYEO</div><h3>光禮</h3></div><div><p>愛純嘅母親，海女，經歷戰亂與漂泊後喺濟州落腳。佢嘅工作、身體同母女相處方式，構成全劇情感根基之一。劇中較明確嘅背景係戰爭孤兒／流離者，唔應直接講成已確認嘅 4·3 事件受害者。</p></div></div>
 <div class="character"><div><div class="role">THE DAUGHTER</div><h3>金明</h3></div><div><p>愛純與寬植嘅長女，教育程度較高，離開濟州到首爾生活。佢承接父母嘅付出，但同時要為自己嘅工作、感情同婚姻作選擇。佢嘅故事令觀眾睇到下一代有更多機會，但唔代表階級限制已經消失。</p></div></div>
 <div class="character"><div><div class="role">THE SIBLINGS</div><h3>殷明、東明</h3></div><div><p>弟妹代表家庭中唔同性格同命運。三名子女嘅名字「金明、銀明、銅明」帶有父母希望孩子各自發光、出人頭地嘅祝願。東明嘅早逝成為父母長年藏喺心底嘅傷口。</p></div></div>
 <div class="character"><div><div class="role">LOCAL POWER</div><h3>夫商吉</h3></div><div><p>有錢嘅漁船船主、地方有勢力人物，原本同愛純有婚約安排。佢有資源同社會地位，卻將家庭視為自己可以支配嘅地方。前段婚姻有兩名兒子，後來同英蘭有兩名女兒；對家庭有暴力、控制同不忠行為。</p></div></div>
@@ -91,7 +124,7 @@
 <details class="episode" data-season="summer"><summary><span class="epno">06</span><span><span class="ep-title">Life Goes On and On</span><span class="ep-sub">살민 살아진다 · 活着就活下去</span></span></summary><div class="epbody"><p>一家人似乎逐漸建立起生活節奏，但風暴同意外打斷咗呢份安穩。自然災害唔會理會一個家庭啱啱先有幾多積蓄、幾多計劃；普通人往往只能喺損失之後想辦法重建。</p><p>呢一集嘅情緒唔只係災難本身，而係災難之後人點樣繼續生活。愛純同寬植嘅關係亦喺共同承受中變得更具體。</p><h4>錄音可以講</h4><ul><li>「活着就活下去」係一種無奈，但亦係普通人嘅韌性。</li><li>生活唔係努力就一定向上，有時先要處理突然出現嘅損失。</li><li>可以談災後重建、家庭分工同伴侶點樣互相扶持。</li></ul></div></details>
 <details class="episode" data-season="summer"><summary><span class="epno">07</span><span><span class="ep-title">A Fruitful Fall</span><span class="ep-sub">자락자락 가을 · 秋意漸深</span></span></summary><div class="epbody"><p>村長選舉帶出地方權力、利益同腐敗。愛純面對唔公平嘅阻力，故事由家庭內部延伸到村落公共生活。另一方面，金明開始接觸更複雜嘅成人世界，遇到涉及道德判斷同責任嘅請求。</p><p>呢度嘅地方政治唔係大型政治劇，而係睇權力點樣透過人情、資源同地方關係影響普通人。</p><h4>錄音可以講</h4><ul><li>小地方嘅權力網絡可能比想像中更貼身，因為大家互相認識。</li><li>公義唔一定係宏大口號，有時係日常生活中可唔可以公平對待人。</li><li>金明開始要為自己嘅選擇負責，唔再只係父母眼中嘅小朋友。</li></ul></div></details>
 <details class="episode" data-season="summer"><summary><span class="epno">08</span><span><span class="ep-title">The Moon Wanes, Yet the Young Heart Remains</span><span class="ep-sub">변하느니 달이요, 마음이야 늙겠는가</span></span></summary><div class="epbody"><p>金明得到去日本留學嘅機會，家庭要喺夢想、經濟能力同父母擔憂之間作決定。對金明嚟講，離開濟州係向外探索；對父母嚟講，支持女兒遠行亦代表要承受分離同未知。</p><p>父母希望子女有更好人生，但當子女真係要走出自己熟悉嘅生活圈，支持同不捨往往同時存在。</p><h4>錄音可以講</h4><ul><li>父母支持子女追夢，係咪代表要放手？</li><li>教育機會可以改變人生，但家庭有冇資源支持，亦影響機會是否真正平等。</li><li>金明嘅離開，係父母一代努力嘅成果，亦係家庭關係嘅新階段。</li></ul></div></details>
-<details class="episode" data-season="autumn"><summary><span class="epno">09</span><span><span class="ep-title">The Wind Goes Whoosh, My Heart Goes Boo-Hoo</span><span class="ep-sub">바람은 왱왱왱 마음은 잉잉잉</span></span></summary><div class="epbody"><p>故事轉向首爾生活。愛純同寬植喺細小公寓面對城市生活、育兒同經濟壓力，尤其照顧殷明嘅難題令父母疲於奔命。金明則喺首爾處理工作同感情，開始感受到城市生活帶來嘅孤獨同競爭。</p><p>同一座城市入面，父母同女兒處於唔同人生階段：父母為家庭生存，女兒想建立自己嘅未來。城市唔一定代表自由，亦可以係另一種壓迫。</p><h4>錄音可以講</h4><ul><li>濟州同首爾嘅生活差異：空間、工作、節奏同人際網絡。</li><li>育兒困難唔係因為父母唔夠愛，而係照顧責任同現實資源之間有落差。</li><li>可以談移居城市後，個人機會增加，但孤獨感亦增加。</li></ul></div></details>
+<details class="episode" data-season="autumn"><summary><span class="epno">09</span><span><span class="ep-title">The Wind Goes Whoosh, My Heart Goes Boo-Hoo</span><span class="ep-sub">바람은 왱왱왱 마음은 잉잉잉</span></span></summary><div class="epbody"><p>故事轉向首爾生活。愛純同寬植喺細小公寓面對城市生活、育兒同經濟壓力，尤其照顧殷明嘅難題令父母疲於奔命。金明則喺首爾處理工作同感情，開始感受到城市生活帶來嘅孤獨同競爭。</p><p>同一座城市入面，父母同女兒處於唔同人生階段：父母為家庭生存，女兒想建立自己嘅未來。城市唔一定代表自由，亦可以係另一種壓迫。</p><p>呢一集亦透過電視新聞帶出當時韓國社會嘅治安焦慮：背景新聞提到「華城連環殺人案」同人口販賣等犯罪議題。呢個係年代背景聲音，唔係金明直接參與案件調查，亦唔係劇集轉成犯罪懸疑線。華城連環殺人案發生於 1986 至 1991 年，新聞被放入場景，令首爾生活嘅不安感更具體。</p><h4>錄音可以講</h4><ul><li>濟州同首爾嘅生活差異：空間、工作、節奏同人際網絡。</li><li>育兒困難唔係因為父母唔夠愛，而係照顧責任同現實資源之間有落差。</li><li>可以談移居城市後，個人機會增加，但孤獨感亦增加。</li></ul></div></details>
 <details class="episode" data-season="autumn"><summary><span class="epno">10</span><span><span class="ep-title">The Storm Sweeps My Heart, the Love Rocks My Heart</span><span class="ep-sub">품 안의 바람 품 안의 사랑</span></span></summary><div class="epbody"><p>金明同有藝術氣質、性格古怪嘅同事忠燮逐漸靠近。忠燮替戲院畫電影海報，兩人嘅生活因電影、戲院同工作場景產生連結。另一方面，愛純反覆出現嘅夢境同不安，令家人開始擔心。</p><p>金明嘅感情線開始由條件較好、較符合社會期待嘅英凡，轉向一個更能理解佢生活處境嘅人。呢個轉變唔係即時完成，而係透過日常相處慢慢建立。</p><h4>錄音可以講</h4><ul><li>戲院係公共文化空間，亦係金明同忠燮建立關係嘅地方。</li><li>忠燮嘅藝術夢想同金明嘅人生選擇互相呼應。</li><li>愛純嘅夢境可以帶出母親直覺、焦慮同家庭情感，但唔需要過度神秘化。</li></ul></div></details>
 <details class="episode" data-season="autumn"><summary><span class="epno">11</span><span><span class="ep-title">My Love by My Side</span><span class="ep-sub">내 사랑 내 곁에 · 我的愛在身旁</span></span></summary><div class="epbody"><p>金明同英凡嘅婚約一步步走向結婚，但金明內心愈來愈不安。雙方家庭見面時，英凡母親對金明同佢父母嘅態度，令階級差距變得非常具體：金明嘅父母被要求配合、服務，愛純亦感受到女兒喺對方家庭入面並未被平等看待。</p><p>英凡母親直接以家庭背景同門第作理由，要求金明解除婚約。金明最終選擇離開呢段關係。佢愛英凡，但亦開始承認自己唔可以為咗婚姻而放棄自尊。英凡後來同另一個符合家族期待嘅對象結婚，卻未必得到幸福。</p><p>忠燮亦喺呢段時間準備服兵役，離開前留低一幅金明嘅畫像。兩人曾經透過尷尬、平凡甚至有啲狼狽嘅日常慢慢靠近，呢份感情未必有華麗承諾，但有真實理解。</p><h4>錄音可以講</h4><ul><li>愛純同金明嘅人生唔會完全複製：母親嫁畀初戀，女兒卻要學識離開一段唔尊重自己嘅關係。</li><li>「愛一個人」同「適合一齊生活」係兩個問題。</li><li>英凡母親嘅階級觀念可以理解其社會背景，但理解唔等於認同羞辱。</li><li>金明講出愛自己，係女性自主同自我價值嘅重要時刻。</li></ul></div></details>
 <details class="episode" data-season="autumn"><summary><span class="epno">12</span><span><span class="ep-title">A Glistening Winter</span><span class="ep-sub">펠롱펠롱 겨울 · 閃爍的冬天</span></span></summary><div class="epbody"><p>金明帶住失戀嘅傷口返到濟州，重新同熟悉嘅家庭生活接觸。返到父母身邊，佢似乎可以暫時由城市競爭同婚姻壓力中退一步。愛純亦更加珍惜同家人相處嘅時光，因為時間一路向前，唔會等人準備好先改變。</p><p>金明嘅返家唔係失敗，而係重新整理自己。家庭喺呢度唔係要替佢解決所有問題，而係提供一個可以休息、重新出發嘅地方。</p><h4>錄音可以講</h4><ul><li>失戀之後返屋企，熟悉嘅食物、空間同家人陪伴可以點樣療癒？</li><li>家係咪一定係一個地方，定係一種有人接住你嘅感覺？</li><li>「閃爍」嘅冬天可以理解成寒冷之中仍然有溫暖嘅小時刻。</li></ul></div></details>
@@ -115,6 +148,7 @@
 <div class="timeitem"><time>2000s</time><h3>家庭觀念與女性選擇變化</h3><p>下一代有更多教育同工作選擇，女性經濟自主程度提高，婚姻逐漸唔再只係家族安排。但照顧父母、孝道同家庭責任仍然存在，新舊價值並存。</p></div>
 </div>
 <div class="callout"><b>重要分辨｜濟州 4·3 唔等於韓戰</b><p>劇集唔係直接描寫 4·3 事件，亦唔應將光禮直接稱為 4·3 受害者。導演曾解釋故事發生喺 4·3 之後，戰爭與動盪令唔同地區嘅流離者進入濟州，影響當地語言同社會面貌。光禮較明確嘅設定係戰爭孤兒／流離者。</p></div>
+<div class="callout"><b>劇中有冇提及華城連環殺人案？有，但係新聞背景。</b><p>EP09 首爾生活場景中，電視新聞聲音提到「華城連環殺人案」及人口販賣等犯罪議題，並非主角直接捲入案件。華城連環殺人案發生於 1986 至 1991 年，劇集用當時新聞氣氛呈現 1980 年代末韓國社會對治安、女性安全及犯罪問題嘅焦慮。呢個細節亦令金明對居住環境安全嘅爭論更貼近當時城市生活背景。</p></div>
 <div class="callout"><b>點解金明當時唔可以幫人補習？</b><p>1980 年補習禁令下，私人補習並唔係今日咁普遍合法嘅學生兼職。當時政府希望減少教育競爭同家庭負擔，但禁止並唔代表需求消失，地下補習仍然存在。政策後來逐步放寬，直至 2000 年憲法法院裁定全面禁令違憲。討論角度：禁止補習究竟係咪真係可以消除教育不平等？有資源嘅家庭會唔會反而更容易找到隱密渠道？</p></div>
 </section>
 
@@ -138,7 +172,7 @@
 <h3 class="kicker">C · 階級：有錢唔代表有幸福</h3><p>商吉有錢有權，卻用資源控制家庭；寬植冇乜錢，卻尊重愛純、共同承擔。英凡有名校同職業背景，但受家庭門第觀念左右；忠燮條件普通，卻願意理解金明。作品唔係簡單講「窮人好、有錢人壞」，而係問資源點樣被使用、權力點樣分配。</p>
 <h3 class="kicker">D · 夢想可以延遲，但唔一定消失</h3><p>愛純年輕時想成為詩人，生活迫使佢將夢想放低。到晚年，佢終於出版詩集、教長者寫字。呢個結局唔係成功學式嘅「只要努力就一定做到」，而係提醒觀眾：人生有時會延遲、有時會改變形式，但一個人曾經想成為嘅自己未必完全消失。</p>
 <h3 class="kicker">E · 愛情係陪伴，唔係代替對方決定</h3><p>寬植嘅可貴唔係佢完美，而係長年選擇尊重同支持愛純。英凡嘅感情則受到家庭條件同母親控制。金明同忠燮嘅關係更重視對方嘅來處、生活同脆弱。作品提出嘅問題係：愛一個人，係替佢安排一條路，定係令佢有能力行自己嘅路？</p>
-<h3 class="kicker">F · 非線性敘事：記憶點樣連起一生</h3><p>故事喺唔同年代之間跳接，以人物關係、旁白同情緒線索令觀眾跟得上。時間跳躍唔只係交代「之後發生咩事」，亦令觀眾感受到人生唔係直線；一個今日嘅選擇，可能要到幾十年後先明白意義。</p>
+<h3 class="kicker">F · 金明點樣理解父母，又點樣選擇自己人生？</h3><p>金明早期未必完全理解父母。佢知道父母辛苦，但年輕時更直接感受到嘅，可能係父母嘅生活方式同自己想要嘅城市生活有距離。當佢到首爾讀書、交往、工作，見到英凡家庭點樣看待自己父母，先更清楚知道：父母嘅價值唔應該由對方嘅財富、衣着或社會地位決定。</p><p>金明嘅理解唔係一夜之間發生。父母為佢賣屋、支持留學、母親為佢再次出外擺檔賺錢，令佢感受到自己嘅機會背後有上一代嘅勞動。到後段，佢亦開始明白父母曾經有夢想、有遺憾，並非只係「為子女犧牲」嘅父母角色。</p><p>但金明最後唔係選擇照抄父母人生。佢離開英凡，係拒絕一段要佢同父母一齊接受羞辱先可以維持嘅婚姻；佢選擇忠燮，係選擇一個可以平等相處、容納自己來處嘅伴侶；佢後來投入教育事業，亦將自己得到嘅教育機會變成其他人可以接近嘅資源。理解父母，唔等於要用同一種犧牲方式生活；感恩同自主可以同時存在。</p><h3 class="kicker">G · 非線性敘事：記憶點樣連起一生</h3><p>故事喺唔同年代之間跳接，以人物關係、旁白同情緒線索令觀眾跟得上。時間跳躍唔只係交代「之後發生咩事」，亦令觀眾感受到人生唔係直線；一個今日嘅選擇，可能要到幾十年後先明白意義。</p>
 </div>
 <table class="compare"><thead><tr><th>比較角度</th><th>人物 A</th><th>人物 B</th><th>可講觀點</th></tr></thead><tbody>
 <tr><td>男性角色</td><td>寬植：承擔、尊重、忠誠</td><td>商吉：財富、地方勢力、控制</td><td>「一家之主」可以有唔同權力模式。</td></tr>
@@ -164,9 +198,29 @@
 
 <section class="section searchable" id="production" data-search="製作 演員 IU 文素利 朴寶劍 朴海俊 廉惠蘭 林尚春 金元錫 Netflix">
 <div class="section-head"><div class="num">09</div><div><div class="kicker">Production notes</div><h2>作品資料、演員與製作討論</h2></div></div>
+<div class="detail-block">
+<h3>四幕上架節奏與宣傳海報</h3>
+<p>Netflix 並非一次過放出 16 集，而係分四星期、每星期四集：第一幕（春）2025 年 3 月 7 日；第二幕（夏）3 月 14 日；第三幕（秋）3 月 21 日；第四幕（冬）3 月 28 日。每幕相隔<strong>七日</strong>，整個上架期由首集到大結局相隔三星期（21 日）。所以「四幕」係故事結構，同時亦係 Netflix 每週上架節奏。</p>
+<div class="poster-grid">
+<div class="poster-card"><div class="poster-art spring"><span>VOL. 01 · 07 MAR 2025</span><b>SPRING<br>仍然盛放<br>仍然有夢</b></div><div class="poster-copy"><h3>第一幕｜春</h3><p>宣傳主視覺以年輕愛純、寬植站在花田嘅青春感為主，校服與田野帶出初戀、夢想同人生開始。</p></div></div>
+<div class="poster-card"><div class="poster-art summer"><span>VOL. 02 · 14 MAR 2025</span><b>SUMMER<br>海風、汗水<br>與家庭</b></div><div class="poster-copy"><h3>第二幕｜夏</h3><p>宣傳圖像轉向海邊及兩人共同生活嘅感覺，色調更明亮，呼應婚姻、工作、生計同育兒。</p></div></div>
+<div class="poster-card"><div class="poster-art autumn"><span>VOL. 03 · 21 MAR 2025</span><b>AUTUMN<br>長大以後<br>仍要選擇</b></div><div class="poster-copy"><h3>第三幕｜秋</h3><p>宣傳焦點轉向成年角色與城市人生，感情、工作同階級壓力逐漸浮現，色調亦較成熟。</p></div></div>
+<div class="poster-card"><div class="poster-art winter"><span>VOL. 04 · 28 MAR 2025</span><b>WINTER<br>回望一生<br>仍有春天</b></div><div class="poster-copy"><h3>第四幕｜冬</h3><p>宣傳視覺帶出跨世代、回望同告別嘅情緒。由青春戀愛轉到家庭、失去與人生收成。</p></div></div>
+</div>
+<p class="note-small">以上係按官方上架節奏及宣傳素材所呈現嘅視覺方向作節目解讀；卡片係網站自製章節視覺，不冒充 Netflix 原版海報。Netflix 於 2025 年 2 月公布每週四集、四星期推出安排。</p>
+</div>
+<div class="detail-block">
+<h3>演員與製作：點樣令六十多年人生連貫？</h3>
+<p><strong>IU：年輕愛純與金明。</strong>一人分演母女兩代，關鍵唔係演成同一個人，而係呈現兩人性格差異，同時保留某種相似嘅眼神、倔強同情感表達。IU 在訪問中提到，演繹 1980 年代金明尤其困難，因為要理解佢對父母說話尖銳、內心卻有愛嘅複雜情緒。</p>
+<p><strong>文素利：年長愛純。</strong>佢唔係單靠化妝變老，而係研究長者嘅動作、說話節奏、呼吸同眼神變化，尤其視力衰退時望人嘅方式。呢啲細節令年輕愛純嘅火爆同年長愛純嘅沉澱感可以連成同一個人生。</p>
+<p><strong>朴寶劍與朴海俊：寬植兩個人生階段。</strong>年輕寬植嘅安靜、笨拙同執着，要延續到年長寬植嘅耐性、身體勞損同不善言辭。觀眾感受到嘅唔係兩個演員模仿對方，而係同一個人經過幾十年勞動後留下嘅身體記憶。</p>
+<p><strong>廉惠蘭：光禮。</strong>光禮戲份唔算全劇最多，但佢為愛純建立咗一個非常重要嘅起點：一個喺貧窮、戰亂與勞動中生存嘅女人，點樣將有限嘅愛交畀女兒。廉惠蘭嘅表演重點係克制，唔係每個情緒都用台詞講出嚟。</p>
+<p><strong>金元錫導演、林尚春編劇。</strong>導演過往作品包括《未生》、《我的大叔》，擅長用生活細節同人物關係建立情緒；編劇林尚春則將幽默、地方語言、家庭衝突同長時間跨度揉合。濟州方言、年代服裝、屋企陳設、海女工作、首爾公寓與戲院等美術細節，令年代不只是字幕，而係角色每日生活嘅環境。</p>
+<p><strong>音樂、剪接與美術。</strong>四季結構令色彩、天氣同自然景觀成為敘事語言；音樂通常唔係單純提示觀眾要哭，而係將某個年代嘅流行文化、人物回憶同情緒連起來。非線性剪接則讓後來嘅事件重新解釋早期場景。</p>
+</div>
 <div class="cards">
 <div class="card"><span class="tag">FORMAT</span><h3>Netflix 16 集限定劇</h3><p>2025 年 3 月上線，四個篇章、每篇四集分批推出。16 集篇幅可以容納人物唔同人生階段，但亦要求觀眾接受較慢嘅生活節奏。</p></div>
-<div class="card"><span class="tag">CREATOR</span><h3>編劇林尚春 · 導演金元錫</h3><p>作品將幽默、辛酸同溫柔放喺同一個生活場景。濟州方言、年代美術、服裝同場景設計，都係建立可信年代感嘅重要部分。</p></div>
+<div class="card"><span class="tag">CREATOR</span><h3>編劇林尚春 · 導演金元錫</h3><p>以人物關係、生活細節、地方語言同跨年代敘事建立情感，而唔係依賴密集反轉。</p></div>
 <div class="card"><span class="tag">DUAL ROLE</span><h3>IU：年輕愛純／金明</h3><p>IU 同時飾演年輕愛純同女兒金明。兩人唔係同一性格：愛純更直接、倔強；金明受教育同城市經驗影響較深，但兩人都承接上一代女性想要更多選擇嘅渴望。</p></div>
 <div class="card"><span class="tag">AGE TRANSITION</span><h3>文素利 · 朴海俊</h3><p>文素利飾演年長愛純，朴海俊飾演年長寬植。年輕與年長演員需要對齊說話節奏、眼神、習慣動作同身體姿態，令同一個角色跨越年齡仍然連貫。</p></div>
 <div class="card"><span class="tag">SUPPORTING</span><h3>廉惠蘭：光禮</h3><p>光禮喺第一集已建立強烈存在感。佢嘅工作、身體狀態同對女兒嘅方式，令觀眾感受到一個經歷過艱難年代嘅母親。可以由第一集開始講表演細節。</p></div>
@@ -177,6 +231,13 @@
 <section class="section searchable" id="sources" data-search="資料來源 參考資料 Netflix UNESCO 韓國國家記錄院 憲法法院 濟州 4.3">
 <div class="section-head"><div class="num">10</div><div><div class="kicker">Sources & fact check</div><h2>資料來源與核對提醒</h2><p class="section-intro">歷史、文化同集數資料以官方或可追溯來源優先。角色劇情以劇集本身為最終依據。</p></div></div>
 <ul class="sources">
+<li><a href="https://about.netflix.com/en/news/when-life-gives-you-tangerines-premieres-march-7" target="_blank" rel="noreferrer">Netflix 官方新聞稿</a> — 2025 年 1 月公布首播日期及主視覺方向。</li>
+<li><a href="https://www.soompi.com/article/1720253wpp/iu-and-park-bo-gums-when-life-gives-you-tangerines-reveals-unique-release-schedule" target="_blank" rel="noreferrer">Soompi：四幕、四星期上架安排</a> — 每星期五推出四集嘅安排及官方說明。</li>
+<li><a href="https://www.stint.se/wp-content/uploads/2021/08/STINT-Country-Report-South-Korea-2021.pdf" target="_blank" rel="noreferrer">STINT：South Korea Country Report</a> — SKY 大學及韓國高等教育競爭背景。</li>
+<li><a href="https://www.koreajoongangdaily.com/lifestyle/how-the-sky-universities-dominate/10147200" target="_blank" rel="noreferrer">Korea JoongAng Daily：How the SKY universities dominate</a> — SKY 三校與韓國社會地位、職涯之間嘅關係。</li>
+<li><a href="https://www.marieclaire.com/culture/tv-shows/when-life-gives-you-tangerines-iu-moon-so-ri-interview/" target="_blank" rel="noreferrer">Marie Claire：IU 與文素利訪問</a> — IU 演繹金明嘅難處、文素利準備年長愛純嘅方法。</li>
+<li><a href="https://www.netflix.com/tudum/when-life-gives-you-tangerines?inapp=true" target="_blank" rel="noreferrer">Netflix Tudum 官方集數簡介</a> — 16 集官方劇情簡介。</li>
+<li><a href="https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e09&tv-show=when-life-gives-you-tangerines-2025" target="_blank" rel="noreferrer">EP09 字幕稿</a> — 電視新聞提及華城連環殺人案及人口販賣；用作核對劇中背景聲音。</li>
 <li><a href="https://www.netflix.com/title/81681535" target="_blank" rel="noreferrer">Netflix 官方劇集頁</a> — 劇集基本資料、演員及官方集數簡介。</li>
 <li><a href="https://www.writers.kr/drama/219246/episodes" target="_blank" rel="noreferrer">Writers Room：16 集資料與集數標題</a> — 集數名稱、播出日及片長參考。</li>
 <li><a href="https://www.rottentomatoes.com/tv/when_life_gives_you_tangerines/s01" target="_blank" rel="noreferrer">Rotten Tomatoes：Episode Guide</a> — EP11–16 官方簡介彙整。</li>
